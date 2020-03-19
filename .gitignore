@@ -1,0 +1,45 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pdb
+*.pdb
+*.dll
+Library/PackageCache/com.unity.analytics@3.3.2/Tests/Editor/Unity.Analytics.StandardEvents/Unity.Analytics.StandardEvents.EditorTests.asmdef
+Library/PackageCache/com.unity.analytics@3.3.2/Tests/Editor/Unity.Analytics.StandardEvents/Unity.Analytics.StandardEvents.EditorTests.asmdef.meta
+Library/CurrentLayout.dwlt
+Library/PlayerDataCache/Android/Data/sharedassets0.assets
+*.dwlt
+Library/CurrentLayout.dwlt
+Library/CurrentLayout.dwlt
+Library/CurrentLayout.dwlt
+Library/CurrentLayout.dwlt
+Library/CurrentLayout.dwlt
+Library/PlayerDataCache/Android/Data/sharedassets0.assets
