@@ -13,12 +13,15 @@ public class movementScript : MonoBehaviour
     public float distanceCounter;
     public float timeCounter;
     public bool ended;
+    private AudioSource footstepsSource;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
+        footstepsSource = this.GetComponent<AudioSource>();
         
     }
 
@@ -28,11 +31,15 @@ public class movementScript : MonoBehaviour
 
         if (distanceCounter > 0 && ended != true) timeCounter += Time.deltaTime;
 
+        if (movement.x != 0 || movement.z != 0) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 1, 4* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,4* Time.deltaTime);
+
+
     }
 
     void FixedUpdate()
     {
         moveCharacter(movement);
+        
     }
 
     void moveCharacter(Vector3 direction)
