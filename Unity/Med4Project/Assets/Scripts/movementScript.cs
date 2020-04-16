@@ -14,6 +14,7 @@ public class movementScript : MonoBehaviour
     public float timeCounter;
     public bool ended;
     private AudioSource footstepsSource;
+    private SimpleCharacterControlFree controller;
 
 
 
@@ -22,31 +23,36 @@ public class movementScript : MonoBehaviour
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
         footstepsSource = this.GetComponent<AudioSource>();
-        
+        controller = gameObject.GetComponent<SimpleCharacterControlFree>();
     }
 
     private void Update()
     {
-        movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        //movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
         if (distanceCounter > 0 && ended != true) timeCounter += Time.deltaTime;
 
-        if (movement.x != 0 || movement.z != 0) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 1, 4* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,4* Time.deltaTime);
+        if (controller.m_currentV > .01 || controller.m_currentH > 0.01 || controller.m_currentV < -.01 || controller.m_currentH <- 0.01) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 1, 4* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,4* Time.deltaTime);
 
-
+        
+        
     }
 
     void FixedUpdate()
     {
-        moveCharacter(movement);
-        
-    }
+        //    moveCharacter(movement);
 
-    void moveCharacter(Vector3 direction)
-    {
-        rb.MovePosition((Vector3)transform.position + (direction * movementSpeed * Time.deltaTime));
-        distanceCounter += Mathf.Abs(direction.x + direction.z);
+        //}
 
+        //void moveCharacter(Vector3 direction)
+        //{
+        //    rb.MovePosition((Vector3)transform.position + (direction * movementSpeed * Time.deltaTime));
+
+        //if (controller.velocity != Vector3.zero)
+        //{
+            distanceCounter += Mathf.Abs(controller.m_currentH + controller.m_currentV)*Time.deltaTime;
+            
+        //}
 
     }
 

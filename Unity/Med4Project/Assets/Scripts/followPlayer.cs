@@ -5,12 +5,12 @@ using UnityEngine;
 public class followPlayer : MonoBehaviour
 {
     public GameObject player;       //Public variable to store a reference to the player game object
-    private string playerTag = "Player";
+    //private string playerTag = "Player";
 
     Vector3 offset;         //Private variable to store the offset distance between the player and camera
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag(playerTag);
+        //player = GameObject.FindGameObjectWithTag(playerTag);
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
         offset = transform.position - player.transform.position;
     }

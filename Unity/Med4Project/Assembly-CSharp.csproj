@@ -63,9 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Character\Scripts\CameraLogicFree.cs" />
+    <Compile Include="Assets\Character\Scripts\DemoFree.cs" />
+    <Compile Include="Assets\Character\Scripts\SimpleCharacterControlFree.cs" />
+    <Compile Include="Assets\Scripts\arduinoController.cs" />
     <Compile Include="Assets\Scripts\followPlayer.cs" />
     <Compile Include="Assets\Scripts\movementScript.cs" />
-    <Compile Include="Assets\arduinoController.cs" />
+    <None Include="Assets\Character\Shaders\FreeCelShader.shader" />
+    <None Include="Assets\Character\Materials\BasicHologram.shader" />
+    <None Include="Assets\Character\Materials\BaiscRim.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/scott/Documents/GitHub/MED4_project/Unity/Med4Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
