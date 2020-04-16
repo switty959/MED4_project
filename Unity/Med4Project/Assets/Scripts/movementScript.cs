@@ -32,7 +32,7 @@ public class movementScript : MonoBehaviour
 
         if (distanceCounter > 0 && ended != true) timeCounter += Time.deltaTime;
 
-        if (controller.m_currentV > .01 || controller.m_currentH > 0.01 || controller.m_currentV < -.01 || controller.m_currentH <- 0.01) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 1, 4* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,4* Time.deltaTime);
+        if (controller.m_currentV > .01 || controller.m_currentH > 0.01 || controller.m_currentV < -.01 || controller.m_currentH <- 0.01) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 1, 10* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,10* Time.deltaTime);
 
         
         
