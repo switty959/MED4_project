@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class buttonController : MonoBehaviour
 {
-    public GameObject loadingImage;
+
     public GameObject[] buttonPanels;
    public void startGame(int level)
     {
-        loadingImage.SetActive(true);
         SceneManager.LoadScene(level);
     }
     public void exitGame()
