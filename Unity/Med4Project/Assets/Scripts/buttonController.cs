@@ -7,24 +7,13 @@ public class buttonController : MonoBehaviour
 {
 
     public GameObject[] buttonPanels;
-   public void startGame(int level)
+   public void StartGame(int level)
     {
         SceneManager.LoadScene(level);
     }
-    public void exitGame()
+    public void ExitGame()
     {
         Application.Quit();
     }
 
-    public void instructions()
-    {
-        buttonPanels[0].SetActive(false); //turning the main menu  off
-        buttonPanels[1].SetActive(true); // turning the instruction menu on
-    }
-
-    public void mainMenu()
-    {
-        buttonPanels[1].SetActive(false); //turning the main menu on
-        buttonPanels[0].SetActive(true); // turning the instruction menu off
-    }
 }
