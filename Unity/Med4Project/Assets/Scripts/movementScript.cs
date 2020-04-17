@@ -15,6 +15,7 @@ public class movementScript : MonoBehaviour
     public bool ended;
     private AudioSource footstepsSource;
     private SimpleCharacterControlFree controller;
+    public GameObject manager;
 
 
 
@@ -62,6 +63,7 @@ public class movementScript : MonoBehaviour
         if (other.tag == "End")
         {
             ended = true;
+            manager.GetComponent<Help>().End();
         }
     }
 }
