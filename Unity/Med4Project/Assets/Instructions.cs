@@ -5,7 +5,7 @@ using UnityEngine;
 public class Instructions : MonoBehaviour
 {
     public Canvas canvas;
-    
+    // Phrygian scale = ominous
     void Start()
     {
         Invoke("ShowInstructions", 2);
