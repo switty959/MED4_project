@@ -75,13 +75,14 @@ public class Correct : MonoBehaviour
             if ((leftCol.hit && direction == Direction.Left)|| (rightCol.hit && direction == Direction.Right) || (forwardCol.hit && direction == Direction.Forward) || (backCol.hit && direction == Direction.Back))
             {
                 audioSource.pitch = Mathf.Lerp(audioSource.pitch, 1.0f, rate);
+                audioSource.volume = Mathf.Lerp(audioSource.volume, 0.5f, rate);
                 //audioSource.volume = 0.0f;
             }
 
             if ((leftCol.hit && direction != Direction.Left) || (rightCol.hit && direction != Direction.Right) || (forwardCol.hit && direction != Direction.Forward) || (backCol.hit && direction != Direction.Back))
             {
-                audioSource.pitch = Mathf.Lerp(audioSource.pitch, 0.85f, rate);
-                //audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, rate);
+                audioSource.pitch = Mathf.Lerp(audioSource.pitch, 1.45f, rate);
+                audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, rate);
             }
 
             
