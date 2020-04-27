@@ -62,11 +62,6 @@ public class Correct : MonoBehaviour
         //}
     }
 
-    public void OnTriggerExit(Collider collision)
-    {
-        entered = false;
-    }
-
 
     public void Update()
     {
