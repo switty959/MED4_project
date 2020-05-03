@@ -41,4 +41,10 @@ public class buttonController : MonoBehaviour
         Application.Quit();
     }
 
+   // public void Help()
+    //{
+      //  ShowInstructions();
+   // }
+
+
 }

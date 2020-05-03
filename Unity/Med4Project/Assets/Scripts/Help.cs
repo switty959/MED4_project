@@ -15,7 +15,7 @@ public class Help : MonoBehaviour
 
     }
 
-    private void ShowInstructions()
+    public void ShowInstructions()
     {
         canvas.gameObject.SetActive(true);
         FreezePlayer();
