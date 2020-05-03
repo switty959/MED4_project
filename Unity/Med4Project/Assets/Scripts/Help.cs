@@ -8,9 +8,10 @@ public class Help : MonoBehaviour
     public Canvas canvas;
     public GameObject player;
     public GameObject panel;
+    public Canvas exitCanvas;
     void Start()
     {
-        
+
         Invoke("ShowInstructions", 2);
 
     }
@@ -18,12 +19,14 @@ public class Help : MonoBehaviour
     public void ShowInstructions()
     {
         canvas.gameObject.SetActive(true);
+        exitCanvas.gameObject.SetActive(false);
         FreezePlayer();
     }
 
     public void CloseInstructions()
     {
         canvas.gameObject.SetActive(false);
+        exitCanvas.gameObject.SetActive(true);
         UnfreezePlayer();
     }
 
@@ -38,6 +41,7 @@ public class Help : MonoBehaviour
         player.GetComponent<SimpleCharacterControlFree>().enabled = false;
         player.GetComponent<Animator>().enabled = false;
         player.GetComponent<AudioSource>().enabled = false;
+        player.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     private void UnfreezePlayer()
@@ -45,6 +49,7 @@ public class Help : MonoBehaviour
         player.GetComponent<SimpleCharacterControlFree>().enabled = true;
         player.GetComponent<Animator>().enabled = true;
         player.GetComponent<AudioSource>().enabled = true;
+        player.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public void EndGame()
