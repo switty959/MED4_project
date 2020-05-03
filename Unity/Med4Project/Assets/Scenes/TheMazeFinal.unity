@@ -6452,7 +6452,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -462981019419857548, guid: e0aa0e4d1e0f68a44ba30fc297274a69,
+      objectReference: {fileID: -462981019419857548, guid: 8543454ef08136245932b6f19bbfeb40,
         type: 3}
     - target: {fileID: 7912164818708528664, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
         type: 3}
@@ -6669,7 +6669,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: e0aa0e4d1e0f68a44ba30fc297274a69, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: 8543454ef08136245932b6f19bbfeb40, type: 3}
 --- !u!4 &971288896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 89828f8e4913755479d544fb3b27da74,
@@ -11979,7 +11979,7 @@ PrefabInstance:
     - target: {fileID: 5922507787812767512, guid: c9154448500c0944d9b8fb403c67ab3f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5922507787812767513, guid: c9154448500c0944d9b8fb403c67ab3f,
         type: 3}
