@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class databaseSendData : MonoBehaviour
 {
@@ -9,19 +10,23 @@ public class databaseSendData : MonoBehaviour
     string timeSpent;
     string distanceTraveled;
     string username;
+    bool sendData = false;
+    public Text usernameHolder;
+    
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && sendData == false)
         {
-            Debug.Log("I have beeen hit!");
-            username = "bob er sej";
+            username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
+            usernameHolder.text ="Code: "+ username;
             timeSpent =  other.GetComponent<movementScript>().timeCounter.ToString();
             distanceTraveled = other.GetComponent<movementScript>().distanceCounter.ToString();
             StartCoroutine(Upload(username, timeSpent, distanceTraveled));
             Debug.Log("timer :" + timeSpent);
             Debug.Log("distance :" + distanceTraveled);
             Debug.Log("username : "+username);
+            sendData = true;
         }
     }
 

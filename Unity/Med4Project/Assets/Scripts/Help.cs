@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Help : MonoBehaviour
 {
 
-    public Canvas canvas;
+    public GameObject tutorial;
     public GameObject player;
-    public GameObject panel;
-    public Canvas exitCanvas;
+    public GameObject EndScreen;
+    public GameObject exitHelpButtons;
     void Start()
     {
 
@@ -18,21 +19,21 @@ public class Help : MonoBehaviour
 
     public void ShowInstructions()
     {
-        canvas.gameObject.SetActive(true);
-        exitCanvas.gameObject.SetActive(false);
+        tutorial.SetActive(true);
+        exitHelpButtons.SetActive(false);
         FreezePlayer();
     }
 
     public void CloseInstructions()
     {
-        canvas.gameObject.SetActive(false);
-        exitCanvas.gameObject.SetActive(true);
+        tutorial.SetActive(false);
+        exitHelpButtons.SetActive(true);
         UnfreezePlayer();
     }
 
     public void End()
     {
-        panel.SetActive(true);
+        EndScreen.SetActive(true);
         FreezePlayer();
     }
 
