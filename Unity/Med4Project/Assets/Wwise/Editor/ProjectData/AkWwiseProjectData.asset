@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab219099ee365ec4d84e8ecd81548770, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: da660d6d1ae14f46a3582cfa83d4558c
+    GuidInternal: 
+    m_lastTime: -8586128750522786677
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 61fe8b559b5fa04d80362b5120bcd84c
+    GuidInternal: 
+    m_lastTime: -8586128750523966294
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: e39b7c4addbb454e90b6b6af8354f4af
+    GuidInternal: 
+    m_lastTime: -8586128708533094025
+    List:
+    - name: General
+      guid: 1e6f9ae276400d4bbc128a5c800f15fc
+      id: 133642231
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: General
+        ObjectType: 7
+      Path: Default Work Unit\General
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: f1fe3549169b8b4d82e5493091337480
+    GuidInternal: 
+    m_lastTime: -8586128708533183971
+    List:
+    - name: reeeSound
+      guid: 6bffae874d00274e93a43c48d816745f
+      id: 761064857
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: reeeSound
+        ObjectType: 3
+      Path: Default Work Unit\reeeSound
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: fefe207c9c62444e9a1f5e54193513cf
+    GuidInternal: 
+    m_lastTime: -8586128750523586413
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: dd9eac2f48f1d24a8bdfbbce827c8409
+    GuidInternal: 
+    m_lastTime: -8586128750523416473
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 691393a9b1e9ad469b5c35615f412903
+    GuidInternal: 
+    m_lastTime: -8586128750523076584
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: e38f84deddea9b4bbf9cf4de97a0c222
+    GuidInternal: 
+    m_lastTime: -8586128750523296507
+    List: []
+  ExpandedItems:
+  - /Med4Project_WwiseProject
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

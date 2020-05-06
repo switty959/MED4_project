@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4935FEF1-9B16-4D8B-82E5-493091337480}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4935FEF1-9B16-4D8B-82E5-493091337480}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="reeeSound" ID="{87AEFF6B-004D-4E27-93A4-3C48D816745F}">
+					<ChildrenList>
+						<Action Name="" ID="{266F9F7C-5A0C-4028-A4D1-A31CFF392FD0}" ShortID="1056219848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="reee" ID="{D93CAB46-A5BD-4FBF-A1BE-1DE5921598EA}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

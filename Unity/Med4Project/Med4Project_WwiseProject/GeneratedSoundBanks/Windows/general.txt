@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	761064857	reeeSound			\Default Work Unit\reeeSound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	383587343	reee	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Windows\SFX\reee_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\reee		514732
+
