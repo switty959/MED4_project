@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e39b7c4addbb454e90b6b6af8354f4af
     GuidInternal: 
-    m_lastTime: -8586128708533094025
+    m_lastTime: -8586128369362020525
     List:
     - name: General
       guid: 1e6f9ae276400d4bbc128a5c800f15fc
@@ -51,13 +51,34 @@ MonoBehaviour:
       - ElementName: General
         ObjectType: 7
       Path: Default Work Unit\General
+    - name: OrbSound
+      guid: 6d26ee9f69f96a448b730ac4f53195cf
+      id: 2749187265
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OrbSound
+        ObjectType: 7
+      Path: Default Work Unit\OrbSound
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPath: Default Work Unit
     guid: f1fe3549169b8b4d82e5493091337480
     GuidInternal: 
-    m_lastTime: -8586128708533183971
+    m_lastTime: -8586128369362100509
     List:
+    - name: OrbSound
+      guid: a15ab0f4dc90ee4dbc816e1e45035a7c
+      id: 2749187265
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OrbSound
+        ObjectType: 3
+      Path: Default Work Unit\OrbSound
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: reeeSound
       guid: 6bffae874d00274e93a43c48d816745f
       id: 761064857
@@ -75,8 +96,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fefe207c9c62444e9a1f5e54193513cf
     GuidInternal: 
-    m_lastTime: -8586128750523586413
-    List: []
+    m_lastTime: -8586128369361940558
+    List:
+    - name: distance
+      guid: e511700564e5a945bc01d4ca335c8c40
+      id: 1240670792
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance
+        ObjectType: 13
+      Path: Default Work Unit\distance
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPath: Default Work Unit
@@ -100,5 +130,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Med4Project_WwiseProject
+  - /Med4Project_WwiseProject/Events
+  - /Med4Project_WwiseProject/Events/Default Work Unit
+  - /Med4Project_WwiseProject/SoundBanks
+  - /Med4Project_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

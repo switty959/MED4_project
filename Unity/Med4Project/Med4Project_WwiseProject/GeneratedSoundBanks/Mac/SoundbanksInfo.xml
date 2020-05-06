@@ -31,5 +31,23 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="2749187265" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\OrbSound</ObjectPath>
+			<ShortName>OrbSound</ShortName>
+			<Path>OrbSound.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="118368654" Language="SFX">
+							<ShortName>Realization 1.wav</ShortName>
+							<Path>SFX\Realization 1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="distance" ObjectPath="\Game Parameters\Default Work Unit\distance"/>
+			</GameParameters>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -13,13 +13,20 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ORBSOUND = 2749187265U;
         static const AkUniqueID REEESOUND = 761064857U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DISTANCE = 1240670792U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID GENERAL = 133642231U;
+        static const AkUniqueID ORBSOUND = 2749187265U;
     } // namespace BANKS
 
     namespace BUSSES

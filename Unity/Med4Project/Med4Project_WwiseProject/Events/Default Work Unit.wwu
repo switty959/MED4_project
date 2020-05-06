@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="OrbSound" ID="{F4B05AA1-90DC-4DEE-BC81-6E1E45035A7C}">
+					<ChildrenList>
+						<Action Name="" ID="{E2247E8D-2211-4F99-88EC-7EDB8F27A9CC}" ShortID="278952166">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OrbSound" ID="{19A23DE6-287D-49C6-9AA0-98994EFA5803}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

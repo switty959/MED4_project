@@ -10,6 +10,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="OrbSound" ID="{9FEE266D-F969-446A-8B73-0AC4F53195CF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="OrbSound" ID="{F4B05AA1-90DC-4DEE-BC81-6E1E45035A7C}" WorkUnitID="{4935FEF1-9B16-4D8B-82E5-493091337480}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -3,8 +3,9 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{22C7E798-4F16-47D0-BC4B-4791E341DEA3}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Switty's pc\Desktop\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\unity_projekt\MED4_project\Unity\Med4Project\Assets\Audio\"/>
 				<Property Name="Event Action List\{87AEFF6B-004D-4E27-93A4-3C48D816745F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F4B05AA1-90DC-4DEE-BC81-6E1E45035A7C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -23,7 +24,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="BesjuxW5zEmfynkMT8RuXg=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="Hm+a4nZADUu8EopcgA8V/A=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="rR9TFH13mkeL5k4XgR9biwGA2Gv/////haaSdWESp0yMKOG8X8OIyQGA2Gv/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>

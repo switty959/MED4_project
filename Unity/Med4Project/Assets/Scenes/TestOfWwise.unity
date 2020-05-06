@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad9ed0ee88cf774d9728b7a4ab01e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -255,7 +255,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c2c10eeae4f620847941c2e041b94c7c,
+    WwiseObjectReference: {fileID: 11400000, guid: a5020895740d7fd41929bc37e719cbb5,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -525,7 +525,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 068a67d14d0149c46ad67dab828b4d43,
+    WwiseObjectReference: {fileID: 11400000, guid: adb9291019997774c97164b72012f0ae,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
