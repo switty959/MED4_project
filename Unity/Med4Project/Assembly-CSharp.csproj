@@ -68,6 +68,7 @@
     <Compile Include="Assets\Character\Scripts\SimpleCharacterControlFree.cs" />
     <Compile Include="Assets\Correct.cs" />
     <Compile Include="Assets\Instructions.cs" />
+    <Compile Include="Assets\PostWwiseEvent.cs" />
     <Compile Include="Assets\Scripts\Cell.cs" />
     <Compile Include="Assets\Scripts\Help.cs" />
     <Compile Include="Assets\Scripts\Logic.cs" />

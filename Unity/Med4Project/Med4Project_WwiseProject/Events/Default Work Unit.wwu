@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="FootStep" ID="{CD911802-2551-4A07-ADDF-8482A0DC036D}">
+					<ChildrenList>
+						<Action Name="" ID="{D3B89A0D-C92B-4B6E-8814-9FCAB95BB987}" ShortID="884008709">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="concrete" ID="{AD727C8E-ED02-4E0E-B2EC-FAC82D416619}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="backgroundSound" ID="{669F1FAB-A37B-4D63-AC26-80B4A6BAF0B0}">
+					<ChildrenList>
+						<Action Name="" ID="{3665696C-38FE-4323-9686-101901439030}" ShortID="1001104539">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4708-leaving-home-by-kevin-macleod" ID="{05C00DA1-9280-4E18-B180-3AA454F0A96E}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

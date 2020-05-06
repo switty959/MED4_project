@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F23BBD0A-1732-4FC9-B7A5-BFC3F4A7B3A9}" SchemaVersion="97">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{F23BBD0A-1732-4FC9-B7A5-BFC3F4A7B3A9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F23BBD0A-1732-4FC9-B7A5-BFC3F4A7B3A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorTime Name="time" ID="{009BB79D-7827-4129-968F-2DE5F5155697}" ShortID="1008879216"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

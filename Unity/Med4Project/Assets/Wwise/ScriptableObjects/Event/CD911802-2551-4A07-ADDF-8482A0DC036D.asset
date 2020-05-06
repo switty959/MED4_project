@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad59e6db24826c45bc36e55db361da8, type: 3}
-  m_Name: 9FEE266D-F969-446A-8B73-0AC4F53195CF
+  m_Script: {fileID: 11500000, guid: 29d70c00e94a132458be8122618d93be, type: 3}
+  m_Name: CD911802-2551-4A07-ADDF-8482A0DC036D
   m_EditorClassIdentifier: 
-  objectName: OrbSound
-  id: 2749187265
-  guid: 9FEE266D-F969-446A-8B73-0AC4F53195CF
+  objectName: FootStep
+  id: 1866025847
+  guid: CD911802-2551-4A07-ADDF-8482A0DC036D

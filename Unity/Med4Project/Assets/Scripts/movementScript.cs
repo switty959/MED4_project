@@ -13,7 +13,7 @@ public class movementScript : MonoBehaviour
     public float distanceCounter;
     public float timeCounter;
     public bool ended;
-    private AudioSource footstepsSource;
+    
     private SimpleCharacterControlFree controller;
     public GameObject manager;
 
@@ -23,7 +23,7 @@ public class movementScript : MonoBehaviour
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
-        footstepsSource = this.GetComponent<AudioSource>();
+        
         controller = gameObject.GetComponent<SimpleCharacterControlFree>();
     }
 
@@ -33,7 +33,13 @@ public class movementScript : MonoBehaviour
 
         if (distanceCounter > 0 && ended != true) timeCounter += Time.deltaTime;
 
-        if (controller.m_currentV > .01 || controller.m_currentH > 0.01 || controller.m_currentV < -.01 || controller.m_currentH <- 0.01) footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0.5f, 10* Time.deltaTime); else footstepsSource.volume = Mathf.Lerp(footstepsSource.volume, 0,10* Time.deltaTime);
+        if (controller.m_currentV > .01 || controller.m_currentH > 0.01 || controller.m_currentV < -.01 || controller.m_currentH <- 0.01)
+        {
+            //AkSoundEngine.PostEvent("FootStep", gameObject);
+        }
+
+        
+        
 
         
         

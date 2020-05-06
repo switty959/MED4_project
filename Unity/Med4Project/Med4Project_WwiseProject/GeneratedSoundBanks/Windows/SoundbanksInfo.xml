@@ -16,38 +16,80 @@
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<IncludedEvents>
-				<Event Id="761064857" Name="reeeSound" ObjectPath="\Events\Default Work Unit\reeeSound" MaxAttenuation="100.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="383587343" Language="SFX">
-							<ShortName>reee.wav</ShortName>
-							<Path>SFX\reee_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3201694278" Name="backgroundSound" ObjectPath="\Events\Default Work Unit\backgroundSound" DurationType="Infinite"/>
+				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
+				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="118368654" Language="SFX">
+					<ShortName>Realization 1.wav</ShortName>
+					<Path>SFX\Realization 1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="157273922" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_E5C63FA9.wem</Path>
+				</File>
+				<File Id="236949157" Language="SFX">
+					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
+					<Path>SFX\ES_Walk Wood Floor - SFX Producer_91DB9890.wem</Path>
+				</File>
+				<File Id="313240041" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_29448B29.wem</Path>
+				</File>
+				<File Id="594578564" Language="SFX">
+					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
+					<Path>SFX\ES_Walk Wood Floor - SFX Producer_3A3FCE3F.wem</Path>
+				</File>
+				<File Id="614771195" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_3C060293.wem</Path>
+				</File>
+				<File Id="665739801" Language="SFX">
+					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
+					<Path>SFX\ES_Walk Wood Floor - SFX Producer_9303D026.wem</Path>
+				</File>
+				<File Id="706519798" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_2491DB90.wem</Path>
+				</File>
+				<File Id="886205884" Language="SFX">
+					<ShortName>4708-leaving-home-by-kevin-macleod.wav</ShortName>
+					<Path>SFX\4708-leaving-home-by-kevin-macleod_D79FB2B7.wem</Path>
+				</File>
+				<File Id="900011461" Language="SFX">
+					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
+					<Path>SFX\ES_Walk Wood Floor - SFX Producer_DAB0F597.wem</Path>
+				</File>
+				<File Id="944684018" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_0EAAF3F4.wem</Path>
+				</File>
+				<File Id="964856012" Language="SFX">
+					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
+					<Path>SFX\ES_Walk Wood Floor - SFX Producer_64006274.wem</Path>
+				</File>
+				<File Id="1019588949" Language="SFX">
+					<ShortName>Concrete_Shoes_Running.wav</ShortName>
+					<Path>SFX\Concrete_Shoes_Running_E2E6210B.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="distance" ObjectPath="\Game Parameters\Default Work Unit\distance"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="748991833" Name="locomotion_type" ObjectPath="\Switches\Default Work Unit\locomotion_type">
+					<Switches>
+						<Switch Id="841620460" Name="concrete" ObjectPath="\Switches\Default Work Unit\locomotion_type\concrete"/>
+						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\locomotion_type\wood"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="2749187265" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\OrbSound</ObjectPath>
-			<ShortName>OrbSound</ShortName>
-			<Path>OrbSound.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="118368654" Language="SFX">
-							<ShortName>Realization 1.wav</ShortName>
-							<Path>SFX\Realization 1_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1240670792" Name="distance" ObjectPath="\Game Parameters\Default Work Unit\distance"/>
-			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

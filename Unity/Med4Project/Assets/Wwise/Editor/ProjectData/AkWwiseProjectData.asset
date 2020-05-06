@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e39b7c4addbb454e90b6b6af8354f4af
     GuidInternal: 
-    m_lastTime: -8586128369362020525
+    m_lastTime: -8586128080042801790
     List:
     - name: General
       guid: 1e6f9ae276400d4bbc128a5c800f15fc
@@ -51,22 +51,37 @@ MonoBehaviour:
       - ElementName: General
         ObjectType: 7
       Path: Default Work Unit\General
-    - name: OrbSound
-      guid: 6d26ee9f69f96a448b730ac4f53195cf
-      id: 2749187265
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: OrbSound
-        ObjectType: 7
-      Path: Default Work Unit\OrbSound
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPath: Default Work Unit
     guid: f1fe3549169b8b4d82e5493091337480
     GuidInternal: 
-    m_lastTime: -8586128369362100509
+    m_lastTime: -8586128124390649340
     List:
+    - name: backgroundSound
+      guid: ab1f9f667ba3634dac2680b4a6baf0b0
+      id: 3201694278
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: backgroundSound
+        ObjectType: 3
+      Path: Default Work Unit\backgroundSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FootStep
+      guid: 021891cd5125074aaddf8482a0dc036d
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FootStep
+        ObjectType: 3
+      Path: Default Work Unit\FootStep
+      maxAttenuation: 0
+      maxDuration: 0.873058
+      minDuration: 0.154685
     - name: OrbSound
       guid: a15ab0f4dc90ee4dbc816e1e45035a7c
       id: 2749187265
@@ -88,7 +103,7 @@ MonoBehaviour:
       - ElementName: reeeSound
         ObjectType: 3
       Path: Default Work Unit\reeeSound
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -96,7 +111,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fefe207c9c62444e9a1f5e54193513cf
     GuidInternal: 
-    m_lastTime: -8586128369361940558
+    m_lastTime: -8586128080042671835
     List:
     - name: distance
       guid: e511700564e5a945bc01d4ca335c8c40
@@ -119,8 +134,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 691393a9b1e9ad469b5c35615f412903
     GuidInternal: 
-    m_lastTime: -8586128750523076584
-    List: []
+    m_lastTime: -8586128124390549370
+    List:
+    - name: locomotion_type
+      guid: 4067b01efed85c44bf82ff6db5edd454
+      id: 748991833
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: locomotion_type
+        ObjectType: 11
+      Path: Default Work Unit\locomotion_type
+      values:
+      - name: concrete
+        guid: c4b68420d7e6d3449413442b6c00f5f7
+        id: 841620460
+        PathAndIcons:
+        - ElementName: concrete
+          ObjectType: 10
+      - name: wood
+        guid: 5933715a2f7d5545b7f6346148800415
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPath: Default Work Unit
@@ -132,7 +172,5 @@ MonoBehaviour:
   - /Med4Project_WwiseProject
   - /Med4Project_WwiseProject/Events
   - /Med4Project_WwiseProject/Events/Default Work Unit
-  - /Med4Project_WwiseProject/SoundBanks
-  - /Med4Project_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

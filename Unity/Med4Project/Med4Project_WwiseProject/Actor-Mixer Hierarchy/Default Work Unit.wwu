@@ -96,6 +96,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="reee" ID="{0B6FEB29-EAEC-45B3-92D9-750BE7624A12}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.159869536855838"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.124898075668624"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.349714611872146"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.699429223744295"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>reee.wav</AudioFile>
 							<MediaIDList>
@@ -125,18 +132,13 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-0</YPos>
+												<YPos>0</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>50</XPos>
-												<YPos>-10</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-200</YPos>
+												<YPos>-20.21448</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -246,6 +248,536 @@
 						<ActiveSource Name="Realization 1" ID="{E7458872-5436-4DF0-8934-8B607A7318D8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="reee_01" ID="{5857CD41-71B2-409B-AEC5-D7310F2E828E}" ShortID="386366211">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{F2DDEC80-F118-4DCF-8967-3BA947911211}" ShortID="254562732">
+									<PropertyList>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{FF02D2FF-F1D3-49F8-9A77-D06EA87A5C31}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>40.18838</XPos>
+															<YPos>-10</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="LowPassFilter" ID="{A64B3730-2F28-4D56-956A-9A13A188405A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="reee" ID="{54912DBB-C5F4-4853-A41C-A4AFF67577A5}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.159869536855838"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.124898075668624"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.609502609262883"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.999184605348992"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>reee.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="235543573"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="reee" ID="{54912DBB-C5F4-4853-A41C-A4AFF67577A5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="4708-leaving-home-by-kevin-macleod" ID="{05C00DA1-9280-4E18-B180-3AA454F0A96E}" ShortID="215377527">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-25</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="4708-leaving-home-by-kevin-macleod" ID="{F023497A-C54F-42F7-BB1F-EB8EBBEB23F1}">
+							<Language>SFX</Language>
+							<AudioFile>4708-leaving-home-by-kevin-macleod.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="886205884"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="4708-leaving-home-by-kevin-macleod" ID="{F023497A-C54F-42F7-BB1F-EB8EBBEB23F1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="footsteps" ID="{C6DEE2CC-5ABD-449A-936E-6EC0E52139A1}" ShortID="771120108">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="concrete" ID="{2084B6C4-E6D7-44D3-9413-442B6C00F5F7}" WorkUnitID="{A9931369-E9B1-46AD-9B5C-35615F412903}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="locomotion_type" ID="{1EB06740-D8FE-445C-BF82-FF6DB5EDD454}" WorkUnitID="{A9931369-E9B1-46AD-9B5C-35615F412903}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="concrete" ID="{AD727C8E-ED02-4E0E-B2EC-FAC82D416619}" ShortID="1045627268">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{29A1456C-B63B-40A8-A50D-DB5464F0A32B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1000"/>
+													<Property Name="Min" Type="Real64" Value="-1000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Concrete_Shoes_Running" ID="{14D21C91-4525-4F1F-9615-D54A6D505FFA}" ShortID="545158356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{C561A22A-AA1F-4F93-97F6-D1A1E81CA334}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.38986187214611"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.87984931506851"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="706519798"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{C561A22A-AA1F-4F93-97F6-D1A1E81CA334}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Concrete_Shoes_Running_01" ID="{BD9C900E-C386-4476-9C87-4ADBED57DF20}" ShortID="182701550">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{7F0CB31A-BA0A-43A8-9AEA-E5E0D8F4F232}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="12.280310288242"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.7396735159817"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="944684018"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{7F0CB31A-BA0A-43A8-9AEA-E5E0D8F4F232}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Concrete_Shoes_Running_02" ID="{49377517-79B3-4224-B55C-E7B527D4D35C}" ShortID="273311218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{8F7CD2C1-5982-4037-8CEA-9CED8FA413E1}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.489987442922367"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.949350670662092"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="157273922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{8F7CD2C1-5982-4037-8CEA-9CED8FA413E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Concrete_Shoes_Running_03" ID="{A4A87282-447A-470A-A022-94B7C217F634}" ShortID="83664753">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{1B35EBF5-F8F1-4B8C-B5AB-D65A671B179E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="17.3026815781963"/>
+												<Property Name="TrimEnd" Type="Real64" Value="17.5782995148402"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1019588949"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{1B35EBF5-F8F1-4B8C-B5AB-D65A671B179E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Concrete_Shoes_Running_04" ID="{DB22C1D3-01A0-45BF-AED8-FF21F0431FD9}" ShortID="118105037">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{FC7F0509-C717-4696-83CC-F69C627EE11F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.44993721461186"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.90930044235163"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="313240041"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{FC7F0509-C717-4696-83CC-F69C627EE11F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Concrete_Shoes_Running_05" ID="{091E9935-6558-4CBC-A57F-EB1D7FB1A299}" ShortID="702255546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Concrete_Shoes_Running" ID="{4641D7BA-430A-49F7-9A1A-8A71A1202313}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.55475513698628"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.014118364726"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Concrete_Shoes_Running.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="614771195"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Concrete_Shoes_Running" ID="{4641D7BA-430A-49F7-9A1A-8A71A1202313}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="wood" ID="{ED0D6C00-5FA9-4088-B5DC-3AFFAE80357C}" ShortID="301341885">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Walk Wood Floor - SFX Producer" ID="{C5D1EAC2-ECF2-49EE-97C2-FDC72140E8E4}" ShortID="1026384832">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Walk Wood Floor - SFX Producer" ID="{2F243216-5E82-4ABF-9156-7996EF2A6C82}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.93808219178082"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.40314155251142"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Walk Wood Floor - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="236949157"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Walk Wood Floor - SFX Producer" ID="{2F243216-5E82-4ABF-9156-7996EF2A6C82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Walk Wood Floor - SFX Producer_01" ID="{4523AF10-1A4F-44EA-A90E-17BAA8D59964}" ShortID="567671978">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Walk Wood Floor - SFX Producer" ID="{1A832763-1015-49A8-92CF-3EBD168F5D70}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.16493150684931"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.64602739726027"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Walk Wood Floor - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="665739801"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Walk Wood Floor - SFX Producer" ID="{1A832763-1015-49A8-92CF-3EBD168F5D70}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Walk Wood Floor - SFX Producer_02" ID="{084CEA6A-8C8E-4CBA-9538-E4BBA957F4EB}" ShortID="116423623">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Walk Wood Floor - SFX Producer" ID="{93EB2E1C-B134-414F-AF62-EC21133C3563}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.58644748858447"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.00339726027397"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Walk Wood Floor - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="900011461"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Walk Wood Floor - SFX Producer" ID="{93EB2E1C-B134-414F-AF62-EC21133C3563}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Walk Wood Floor - SFX Producer_03" ID="{41026390-B91D-448A-B589-D1D1BD122A29}" ShortID="828945794">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Walk Wood Floor - SFX Producer" ID="{4D64407C-CCEF-4644-9254-2EDC01E3385D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.86936986301369"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.33442922374429"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Walk Wood Floor - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="594578564"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Walk Wood Floor - SFX Producer" ID="{4D64407C-CCEF-4644-9254-2EDC01E3385D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Walk Wood Floor - SFX Producer_04" ID="{A33FF5BA-933F-4031-8A16-3301C3FA4CEC}" ShortID="231799189">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Walk Wood Floor - SFX Producer" ID="{2F6448E9-D741-4CAA-8F96-32F681F7B992}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.57497716894976"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.95985388127854"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Walk Wood Floor - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="964856012"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Walk Wood Floor - SFX Producer" ID="{2F6448E9-D741-4CAA-8F96-32F681F7B992}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="wood" ID="{ED0D6C00-5FA9-4088-B5DC-3AFFAE80357C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="concrete" ID="{AD727C8E-ED02-4E0E-B2EC-FAC82D416619}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="wood" ID="{5A713359-7D2F-4555-B7F6-346148800415}"/>
+								<ItemList>
+									<ItemRef Name="wood" ID="{ED0D6C00-5FA9-4088-B5DC-3AFFAE80357C}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="concrete" ID="{2084B6C4-E6D7-44D3-9413-442B6C00F5F7}"/>
+								<ItemList>
+									<ItemRef Name="concrete" ID="{AD727C8E-ED02-4E0E-B2EC-FAC82D416619}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

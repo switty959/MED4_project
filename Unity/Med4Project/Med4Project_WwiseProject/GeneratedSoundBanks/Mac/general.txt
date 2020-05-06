@@ -1,6 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
-	761064857	reeeSound			\Default Work Unit\reeeSound	
+	1866025847	FootStep			\Default Work Unit\FootStep	
+	2749187265	OrbSound			\Default Work Unit\OrbSound	
+	3201694278	backgroundSound			\Default Work Unit\backgroundSound	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	748991833	locomotion_type			\Default Work Unit\locomotion_type	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	concrete	locomotion_type			
+	2058049674	wood	locomotion_type			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1240670792	distance			\Default Work Unit\distance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	383587343	reee	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\reee_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\reee		514732
+	118368654	OrbSound	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Realization 1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\OrbSound		2929752
+	157273922	Concrete_Shoes_Running_02	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_E5C63FA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running_02		88264
+	236949157	ES_Walk Wood Floor - SFX Producer	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\ES_Walk Wood Floor - SFX Producer_91DB9890.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\wood\ES_Walk Wood Floor - SFX Producer		89356
+	313240041	Concrete_Shoes_Running_04	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_29448B29.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running_04		88260
+	594578564	ES_Walk Wood Floor - SFX Producer_03	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\ES_Walk Wood Floor - SFX Producer_3A3FCE3F.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\wood\ES_Walk Wood Floor - SFX Producer_03		89356
+	614771195	Concrete_Shoes_Running_05	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_3C060293.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running_05		88264
+	665739801	ES_Walk Wood Floor - SFX Producer_01	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\ES_Walk Wood Floor - SFX Producer_9303D026.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\wood\ES_Walk Wood Floor - SFX Producer_01		92432
+	706519798	Concrete_Shoes_Running	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_2491DB90.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running		94144
+	886205884	4708-leaving-home-by-kevin-macleod	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\4708-leaving-home-by-kevin-macleod_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\4708-leaving-home-by-kevin-macleod		86409280
+	900011461	ES_Walk Wood Floor - SFX Producer_02	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\ES_Walk Wood Floor - SFX Producer_DAB0F597.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\wood\ES_Walk Wood Floor - SFX Producer_02		80120
+	944684018	Concrete_Shoes_Running_01	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_0EAAF3F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running_01		88260
+	964856012	ES_Walk Wood Floor - SFX Producer_04	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\ES_Walk Wood Floor - SFX Producer_64006274.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\wood\ES_Walk Wood Floor - SFX Producer_04		73960
+	1019588949	Concrete_Shoes_Running_03	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Mac\SFX\Concrete_Shoes_Running_E2E6210B.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps\concrete\Concrete_Shoes_Running_03		52980
 
