@@ -17,9 +17,9 @@
 			<Path>General.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3201694278" Name="backgroundSound" ObjectPath="\Events\Default Work Unit\backgroundSound" DurationType="Infinite"/>
-				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.454495" DurationMax="0.454495"/>
+				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
-				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.304844" DurationMax="0.304844"/>
+				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.600000" DurationMax="1.600000"/>
 				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -35,13 +35,13 @@
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
 					<Path>SFX\ES_Walk Wood Floor - SFX Producer_91DB9890.wem</Path>
 				</File>
+				<File Id="256120004" Language="SFX">
+					<ShortName>positive.wav</ShortName>
+					<Path>SFX\positive_2B6B3830.wem</Path>
+				</File>
 				<File Id="313240041" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_29448B29.wem</Path>
-				</File>
-				<File Id="405475584" Language="SFX">
-					<ShortName>goodbad.wav</ShortName>
-					<Path>SFX\goodbad_704BDFA5.wem</Path>
 				</File>
 				<File Id="594578564" Language="SFX">
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
@@ -55,6 +55,10 @@
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
 					<Path>SFX\ES_Walk Wood Floor - SFX Producer_9303D026.wem</Path>
 				</File>
+				<File Id="686982399" Language="SFX">
+					<ShortName>p4upwards.wav</ShortName>
+					<Path>SFX\p4upwards_774C5742.wem</Path>
+				</File>
 				<File Id="706519798" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_2491DB90.wem</Path>
@@ -66,10 +70,6 @@
 				<File Id="900011461" Language="SFX">
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
 					<Path>SFX\ES_Walk Wood Floor - SFX Producer_DAB0F597.wem</Path>
-				</File>
-				<File Id="919117762" Language="SFX">
-					<ShortName>goodbad.wav</ShortName>
-					<Path>SFX\goodbad_55C390CB.wem</Path>
 				</File>
 				<File Id="944684018" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>

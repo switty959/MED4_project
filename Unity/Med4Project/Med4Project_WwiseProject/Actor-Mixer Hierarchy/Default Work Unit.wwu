@@ -738,9 +738,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}" ShortID="665427245">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
@@ -768,9 +765,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}" ShortID="833146817">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>

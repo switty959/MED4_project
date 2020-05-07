@@ -49,10 +49,10 @@
 				</Event>
 				<Event Name="goodSound" ID="{910C9DFB-EFD9-43AE-BFF6-EC0BDA802713}">
 					<ChildrenList>
-						<Action Name="" ID="{9F6CC331-0A16-42D3-A244-CB388D207642}" ShortID="320086818">
+						<Action Name="" ID="{7461013B-15A2-4414-9C95-FABACD76AD18}" ShortID="611305472">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}"/>
+									<ObjectRef Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -60,10 +60,10 @@
 				</Event>
 				<Event Name="badSound" ID="{1AAAFEAB-BAAA-4BD2-B19C-FD48496F41BE}">
 					<ChildrenList>
-						<Action Name="" ID="{3C5CF66F-A59F-4E08-A525-637FC3C2FDC1}" ShortID="553268578">
+						<Action Name="" ID="{E6BC7852-E91F-4285-A8D3-D0A9476D8206}" ShortID="232959356">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}"/>
+									<ObjectRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

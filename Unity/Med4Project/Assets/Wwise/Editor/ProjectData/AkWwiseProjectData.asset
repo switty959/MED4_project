@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e39b7c4addbb454e90b6b6af8354f4af
     GuidInternal: 
-    m_lastTime: -8586127639472091808
+    m_lastTime: -8586127625041901040
     List:
     - name: General
       guid: 1e6f9ae276400d4bbc128a5c800f15fc
@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f1fe3549169b8b4d82e5493091337480
     GuidInternal: 
-    m_lastTime: -8586127635326528262
+    m_lastTime: -8586127623705258100
     List:
     - name: backgroundSound
       guid: ab1f9f667ba3634dac2680b4a6baf0b0
@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\badSound
       maxAttenuation: 100
-      maxDuration: 0.454495
-      minDuration: 0.454495
+      maxDuration: 1
+      minDuration: 1
     - name: FootStep
       guid: 021891cd5125074aaddf8482a0dc036d
       id: 1866025847
@@ -104,8 +104,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\goodSound
       maxAttenuation: 100
-      maxDuration: 0.304844
-      minDuration: 0.304844
+      maxDuration: 1.6
+      minDuration: 1.6
     - name: OrbSound
       guid: a15ab0f4dc90ee4dbc816e1e45035a7c
       id: 2749187265
@@ -219,7 +219,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Med4Project_WwiseProject
-  - /Med4Project_WwiseProject/Events
-  - /Med4Project_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

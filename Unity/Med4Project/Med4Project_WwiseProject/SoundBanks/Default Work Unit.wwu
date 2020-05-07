@@ -7,12 +7,12 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="wood" ID="{ED0D6C00-5FA9-4088-B5DC-3AFFAE80357C}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{C6DEE2CC-5ABD-449A-936E-6EC0E52139A1}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OrbSound" ID="{19A23DE6-287D-49C6-9AA0-98994EFA5803}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="guidelines" ID="{A2A5144B-72BD-4A21-9A82-8B0D2677F701}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="concrete" ID="{AD727C8E-ED02-4E0E-B2EC-FAC82D416619}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="4708-leaving-home-by-kevin-macleod" ID="{05C00DA1-9280-4E18-B180-3AA454F0A96E}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
