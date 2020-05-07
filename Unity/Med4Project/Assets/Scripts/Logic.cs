@@ -39,41 +39,48 @@ public class Logic : MonoBehaviour
 
     public void PathCheck(int cellID, GameObject cellObject)
     {
-        var index = path_1_list.IndexOf(lastID) + 1;
-        float offset = 0.0f;
+        //var index = path_1_list.IndexOf(lastID) + 1;
+        //float offset = 0.0f;
 
-        if (path_1_list.Contains(cellID) && !path_1_list.Contains(index))
+        if (path_1_list.Contains(cellID) && !path_1_list.Contains(lastID))
         {
             print("Correct");
+            goodSound.Post(gameObject);
         }
 
-        if (path_1_list.Contains(cellID))
+        else if (path_1_list.Contains(lastID) && !path_1_list.Contains(cellID))
         {
-            if (path_1_list[index] == cellID)
-            {
-                //print("correct");
-                //goodSound.volume = 1.0f;
-                //badSound.volume = 0.0f;
-                goodSound.Post(gameObject);
-                lastCorrect = cellObject.transform.position;
-            }
-            else
-            {
-                //print("incorrect");          
-                offset = Vector3.Distance(player.transform.position, lastCorrect);
-                badSound.Post(gameObject);
-                //goodSound.volume = 1 - (offset/10);
-                //badSound.volume = offset / 10;
-            }
-        }
-        else
-        {
-            //print("incorrect");
+            print("Incorrect");
             badSound.Post(gameObject);
-            offset = (lastCorrect - player.transform.position).magnitude;
-            //goodSound.volume = 1 - (offset / 10);
-            //badSound.volume = offset / 10;
         }
+
+        //if (path_1_list.Contains(cellID))
+        //{
+        //    if (path_1_list[index] == cellID)
+        //    {
+        //        //print("correct");
+        //        //goodSound.volume = 1.0f;
+        //        //badSound.volume = 0.0f;
+        //        goodSound.Post(gameObject);
+        //        lastCorrect = cellObject.transform.position;
+        //    }
+        //    else
+        //    {
+        //        //print("incorrect");          
+        //        offset = Vector3.Distance(player.transform.position, lastCorrect);
+        //        badSound.Post(gameObject);
+        //        //goodSound.volume = 1 - (offset/10);
+        //        //badSound.volume = offset / 10;
+        //    }
+        //}
+        //else
+        //{
+        //    //print("incorrect");
+        //    badSound.Post(gameObject);
+        //    offset = (lastCorrect - player.transform.position).magnitude;
+        //    //goodSound.volume = 1 - (offset / 10);
+        //    //badSound.volume = offset / 10;
+        //}
 
     }
 
