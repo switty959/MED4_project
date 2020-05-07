@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: good
   id: 668632890
   guid: 14202C15-ECBD-4DA8-A0C7-411A3D54E489
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 5f776ddfabaf2d749bcfed9eaaf3f6dd,
+    type: 2}

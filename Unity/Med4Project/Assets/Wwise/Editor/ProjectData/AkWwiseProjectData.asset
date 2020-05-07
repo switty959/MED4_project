@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e39b7c4addbb454e90b6b6af8354f4af
     GuidInternal: 
-    m_lastTime: -8586128080042801790
+    m_lastTime: -8586127670852084889
     List:
     - name: General
       guid: 1e6f9ae276400d4bbc128a5c800f15fc
@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f1fe3549169b8b4d82e5493091337480
     GuidInternal: 
-    m_lastTime: -8586128124390649340
+    m_lastTime: -8586127658079945441
     List:
     - name: backgroundSound
       guid: ab1f9f667ba3634dac2680b4a6baf0b0
@@ -70,6 +70,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: badSound
+      guid: abfeaa1aaabad24bb19cfd48496f41be
+      id: 2345884723
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: badSound
+        ObjectType: 3
+      Path: Default Work Unit\badSound
+      maxAttenuation: 100
+      maxDuration: 0.454495
+      minDuration: 0.454495
     - name: FootStep
       guid: 021891cd5125074aaddf8482a0dc036d
       id: 1866025847
@@ -82,6 +94,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.873058
       minDuration: 0.154685
+    - name: goodSound
+      guid: fb9d0c91d9efae43bff6ec0bda802713
+      id: 3430553343
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: goodSound
+        ObjectType: 3
+      Path: Default Work Unit\goodSound
+      maxAttenuation: 100
+      maxDuration: 0.304844
+      minDuration: 0.304844
     - name: OrbSound
       guid: a15ab0f4dc90ee4dbc816e1e45035a7c
       id: 2749187265
@@ -111,7 +135,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fefe207c9c62444e9a1f5e54193513cf
     GuidInternal: 
-    m_lastTime: -8586128080042671835
+    m_lastTime: -8586127658491931840
     List:
     - name: distance
       guid: e511700564e5a945bc01d4ca335c8c40
@@ -134,8 +158,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 691393a9b1e9ad469b5c35615f412903
     GuidInternal: 
-    m_lastTime: -8586128124390549370
+    m_lastTime: -8586127670851884947
     List:
+    - name: goodBadSound
+      guid: 180b8404a85e0e4085265ea16d2bc5e7
+      id: 379656168
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: goodBadSound
+        ObjectType: 11
+      Path: Default Work Unit\goodBadSound
+      values:
+      - name: bad
+        guid: 7091ba08b7cd8d4fb7d2a62fcd629407
+        id: 513390134
+        PathAndIcons:
+        - ElementName: bad
+          ObjectType: 10
+      - name: good
+        guid: 152c2014bdeca84da0c7411a3d54e489
+        id: 668632890
+        PathAndIcons:
+        - ElementName: good
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: locomotion_type
       guid: 4067b01efed85c44bf82ff6db5edd454
       id: 748991833

@@ -6603,7 +6603,7 @@ PrefabInstance:
         type: 3}
       propertyPath: goodSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1912486778}
     - target: {fileID: 1829663681463735735, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
         type: 3}
       propertyPath: badSound
@@ -6614,6 +6614,24 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2093986008}
+    - target: {fileID: 1829663681463735735, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
+        type: 3}
+      propertyPath: goodBadSounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 21df4f1b803311a4295aacd0a602fe43,
+        type: 2}
+    - target: {fileID: 1829663681463735735, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
+        type: 3}
+      propertyPath: goodSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cbe22415b476b0f4bbc2d8fe7abbf764,
+        type: 2}
+    - target: {fileID: 1829663681463735735, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
+        type: 3}
+      propertyPath: badSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a402acc185312f140a9c5afff504cd7c,
+        type: 2}
     - target: {fileID: 4366408437428863622, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
         type: 3}
       propertyPath: m_LocalPosition.x
