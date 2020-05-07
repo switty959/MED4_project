@@ -31,7 +31,6 @@ ehthumbs.db
 Thumbs.db
 *.pdb
 *.pdb
-*.dll
 Library/PackageCache/com.unity.analytics@3.3.2/Tests/Editor/Unity.Analytics.StandardEvents/Unity.Analytics.StandardEvents.EditorTests.asmdef
 Library/PackageCache/com.unity.analytics@3.3.2/Tests/Editor/Unity.Analytics.StandardEvents/Unity.Analytics.StandardEvents.EditorTests.asmdef.meta
 Library/CurrentLayout.dwlt

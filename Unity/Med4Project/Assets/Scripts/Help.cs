@@ -41,7 +41,6 @@ public class Help : MonoBehaviour
     {
         player.GetComponent<SimpleCharacterControlFree>().enabled = false;
         player.GetComponent<Animator>().enabled = false;
-        player.GetComponent<AudioSource>().enabled = false;
         player.GetComponent<Rigidbody>().isKinematic = true;
     }
 
@@ -49,7 +48,6 @@ public class Help : MonoBehaviour
     {
         player.GetComponent<SimpleCharacterControlFree>().enabled = true;
         player.GetComponent<Animator>().enabled = true;
-        player.GetComponent<AudioSource>().enabled = true;
         player.GetComponent<Rigidbody>().isKinematic = false;
     }
 
