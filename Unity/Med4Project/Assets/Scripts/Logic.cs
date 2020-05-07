@@ -42,6 +42,11 @@ public class Logic : MonoBehaviour
         var index = path_1_list.IndexOf(lastID) + 1;
         float offset = 0.0f;
 
+        if (path_1_list.Contains(cellID) && !path_1_list.Contains(index))
+        {
+            print("Correct");
+        }
+
         if (path_1_list.Contains(cellID))
         {
             if (path_1_list[index] == cellID)
