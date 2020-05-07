@@ -7599,7 +7599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Welcome to the first iteration of The Maze!
+  m_Text: 'Welcome to the second iteration of The Maze!
 
 
     Use the WASD or the
@@ -9791,7 +9791,7 @@ Transform:
   m_GameObject: {fileID: 1632322058}
   m_LocalRotation: {x: 0.000000059604645, y: 0.000000119209275, z: 0.000000059604645,
     w: 1}
-  m_LocalPosition: {x: 0, y: 0.7790002, z: 0.004000855}
+  m_LocalPosition: {x: 0.004, y: 1.1, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 764542796}
@@ -9891,8 +9891,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d4dd9cb3d3a8c2540b76d1efc62c2498,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

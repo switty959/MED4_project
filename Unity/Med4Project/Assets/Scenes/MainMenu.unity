@@ -1777,8 +1777,8 @@ MonoBehaviour:
     headphone you hear the sound through.
 
 
-    Please adjust your volume to a comfortable
-    level now.'
+    Also, please adjust your volume to
+    a comfortable level now.'
 --- !u!222 &1079494513
 CanvasRenderer:
   m_ObjectHideFlags: 0
