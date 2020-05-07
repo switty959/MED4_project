@@ -737,7 +737,10 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}" ShortID="979477268">
+						<Sound Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}" ShortID="665427245">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
@@ -747,24 +750,27 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="goodbad" ID="{6A7C0463-1BBD-4680-A816-A69F5576B4B4}">
+								<AudioFileSource Name="p4upwards" ID="{DF95C2CD-0B92-4B7E-90FB-8AB4901F1B7E}">
 									<PropertyList>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.448952683813252"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.753797098748175"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.2"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.2"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>goodbad.wav</AudioFile>
+									<AudioFile>p4upwards.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="919117762"/>
+										<MediaID ID="686982399"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="goodbad" ID="{6A7C0463-1BBD-4680-A816-A69F5576B4B4}" Platform="Linked"/>
+								<ActiveSource Name="p4upwards" ID="{DF95C2CD-0B92-4B7E-90FB-8AB4901F1B7E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}" ShortID="109525017">
+						<Sound Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}" ShortID="833146817">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
@@ -774,44 +780,43 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="goodbad" ID="{1C900819-BC81-45A5-B3DD-BB57FBC94218}">
+								<AudioFileSource Name="positive" ID="{061F82EF-8E6A-482A-A40F-3AD05DCE25CA}">
 									<PropertyList>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.99534526139223"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.44984057093157"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.6"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>goodbad.wav</AudioFile>
+									<AudioFile>positive.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="405475584"/>
+										<MediaID ID="256120004"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="goodbad" ID="{1C900819-BC81-45A5-B3DD-BB57FBC94218}" Platform="Linked"/>
+								<ActiveSource Name="positive" ID="{061F82EF-8E6A-482A-A40F-3AD05DCE25CA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}"/>
+								<ItemRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}"/>
+								<ItemRef Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
 								<SwitchRef Name="good" ID="{14202C15-ECBD-4DA8-A0C7-411A3D54E489}"/>
 								<ItemList>
-									<ItemRef Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}"/>
+									<ItemRef Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="bad" ID="{08BA9170-CDB7-4F8D-B7D2-A62FCD629407}"/>
 								<ItemList>
-									<ItemRef Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}"/>
+									<ItemRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
