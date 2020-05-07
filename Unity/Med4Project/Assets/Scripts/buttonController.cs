@@ -9,14 +9,19 @@ public class buttonController : MonoBehaviour
     public GameObject[] buttonPanels;
     public Slider slider;
     private AudioSource audioSource;
+    private float sliderValue;
+
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
+    
     }
     public void Update()
     {
-        audioSource.panStereo = slider.value;
+        sliderValue = slider.value; 
+        AkSoundEngine.SetRTPCValue("PanSilder",sliderValue);
+
 
         if(buttonPanels[1].activeInHierarchy == true)
         {
@@ -35,6 +40,7 @@ public class buttonController : MonoBehaviour
         slider.value = 0;        
         buttonPanels[0].SetActive(false);
         buttonPanels[1].SetActive(true);
+        
     }
 
     public void ExitGame()

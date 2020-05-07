@@ -13,11 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BACKGROUNDSOUND = 3201694278U;
         static const AkUniqueID BADSOUND = 2345884723U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID GOODSOUND = 3430553343U;
         static const AkUniqueID ORBSOUND = 2749187265U;
+        static const AkUniqueID PANNINGTEST = 2376404420U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -49,6 +49,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTANCE = 1240670792U;
+        static const AkUniqueID PANSILDER = 473182071U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

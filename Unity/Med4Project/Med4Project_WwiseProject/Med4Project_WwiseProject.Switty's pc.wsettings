@@ -3,13 +3,14 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{22C7E798-4F16-47D0-BC4B-4791E341DEA3}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Switty's pc\Downloads\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Switty's pc\Desktop\footsteps\footstepsOnCement\"/>
 				<Property Name="Event Action List\{1AAAFEAB-BAAA-4BD2-B19C-FD48496F41BE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{669F1FAB-A37B-4D63-AC26-80B4A6BAF0B0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8196F5A9-36C5-4DAE-9D36-639314E2C08D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{87AEFF6B-004D-4E27-93A4-3C48D816745F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{910C9DFB-EFD9-43AE-BFF6-EC0BDA802713}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CD911802-2551-4A07-ADDF-8482A0DC036D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E42BF368-0E56-4F5E-B768-BF9D62E23474}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F4B05AA1-90DC-4DEE-BC81-6E1E45035A7C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -61,14 +62,15 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="Yf6LVZtfoE2ANitRILzYTA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="AGwN7alfiEC13Dr/roA1fMzi3sa9WppEk25uwOUhOaFESZ7Nog5dRYzRx4DjME9nSxSlor1yIUqagosNJnf3AY58cq0C7Q5Osuz6yC1BZhk="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="REmezaIOXUWM0ceA4zBPZ0sUpaK9ciFKmoKLDSZ39wE="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="8f41SRabi02C5UkwkTN0gA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="GAuEBKheDkCFJl6hbSvF50BnsB7+2FxEv4L/bbXt1FRpE5OpsemtRptcNWFfQSkD"/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="45t8St27RU6Qtravg1T0rw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="/v4gfJxiRE6aH15UGTUTzw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="RTPC\GameParameterSimValue\{057011E5-E564-45A9-BC01-D4CA335C8C40}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E6CA83BA-7480-44BE-BAF0-883499D441F9}" Type="Real64" Value="-0.09"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="45t8St27RU6Qtravg1T0rw=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

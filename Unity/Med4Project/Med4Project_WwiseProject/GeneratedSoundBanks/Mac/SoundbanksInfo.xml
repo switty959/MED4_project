@@ -16,11 +16,11 @@
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3201694278" Name="backgroundSound" ObjectPath="\Events\Default Work Unit\backgroundSound" DurationType="Infinite"/>
 				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
 				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.600000" DurationMax="1.600000"/>
 				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="2376404420" Name="panningTest" ObjectPath="\Events\Default Work Unit\panningTest" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="118368654" Language="SFX">
@@ -37,7 +37,7 @@
 				</File>
 				<File Id="256120004" Language="SFX">
 					<ShortName>positive.wav</ShortName>
-					<Path>SFX\positive_2B6B3830.wem</Path>
+					<Path>SFX\positive_C09C2CD6.wem</Path>
 				</File>
 				<File Id="313240041" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
@@ -57,7 +57,7 @@
 				</File>
 				<File Id="686982399" Language="SFX">
 					<ShortName>p4upwards.wav</ShortName>
-					<Path>SFX\p4upwards_774C5742.wem</Path>
+					<Path>SFX\p4upwards_5CC77382.wem</Path>
 				</File>
 				<File Id="706519798" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
@@ -85,6 +85,7 @@
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
+				<GameParameter Id="473182071" Name="PanSilder" ObjectPath="\Game Parameters\Default Work Unit\PanSilder"/>
 				<GameParameter Id="1240670792" Name="distance" ObjectPath="\Game Parameters\Default Work Unit\distance"/>
 			</GameParameters>
 			<SwitchGroups>

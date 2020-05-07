@@ -141,6 +141,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -244,6 +245,14 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C24F8F9E-E6D5-42C0-8433-023DD33B3FA6}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-100"/>
+								<Property Name="PanY" Type="Real64" Value="-81.2765957446808"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="reee" ID="{54912DBB-C5F4-4853-A41C-A4AFF67577A5}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -749,6 +758,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="p4upwards" ID="{DF95C2CD-0B92-4B7E-90FB-8AB4901F1B7E}">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.362135868045849"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.362135868045849"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.2"/>
 										<Property Name="TrimEnd" Type="Real64" Value="1.2"/>
@@ -776,6 +787,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="positive" ID="{061F82EF-8E6A-482A-A40F-3AD05DCE25CA}">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.642922374429224"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.537716894977169"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimEnd" Type="Real64" Value="1.6"/>
 									</PropertyList>
@@ -900,6 +913,72 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="reee" ID="{0B6FEB29-EAEC-45B3-92D9-750BE7624A12}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PanningTest" ID="{50B84086-D698-4BBC-A0F0-3D956F0E47D1}" ShortID="440244236">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-25</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="4708-leaving-home-by-kevin-macleod" ID="{7B3F02EE-57A6-4A83-860E-5CEFAAF8A36F}">
+							<Language>SFX</Language>
+							<AudioFile>4708-leaving-home-by-kevin-macleod.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="886205884"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{0A7B03BD-A7F5-4999-B70D-D64E139ED66C}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{17160297-4562-480C-B088-C8307E05CDA1}" ShortID="777359404">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="PanSilder" ID="{E6CA83BA-7480-44BE-BAF0-883499D441F9}" WorkUnitID="{7C20FEFE-629C-4E44-9A1F-5E54193513CF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FD3CEE1F-E1FA-4494-BCD9-8E48AA60F725}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-1</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="4708-leaving-home-by-kevin-macleod" ID="{7B3F02EE-57A6-4A83-860E-5CEFAAF8A36F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

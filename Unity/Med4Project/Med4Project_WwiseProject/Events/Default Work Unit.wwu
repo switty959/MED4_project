@@ -36,17 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="backgroundSound" ID="{669F1FAB-A37B-4D63-AC26-80B4A6BAF0B0}">
-					<ChildrenList>
-						<Action Name="" ID="{3665696C-38FE-4323-9686-101901439030}" ShortID="1001104539">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="4708-leaving-home-by-kevin-macleod" ID="{05C00DA1-9280-4E18-B180-3AA454F0A96E}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="goodSound" ID="{910C9DFB-EFD9-43AE-BFF6-EC0BDA802713}">
 					<ChildrenList>
 						<Action Name="" ID="{7461013B-15A2-4414-9C95-FABACD76AD18}" ShortID="611305472">
@@ -64,6 +53,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="panningTest" ID="{E42BF368-0E56-4F5E-B768-BF9D62E23474}">
+					<ChildrenList>
+						<Action Name="" ID="{2C5A5838-34DA-4F18-B17B-14095F4965EF}" ShortID="60797098">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PanningTest" ID="{50B84086-D698-4BBC-A0F0-3D956F0E47D1}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
