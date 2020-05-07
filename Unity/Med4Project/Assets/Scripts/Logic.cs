@@ -42,13 +42,13 @@ public class Logic : MonoBehaviour
         //var index = path_1_list.IndexOf(lastID) + 1;
         //float offset = 0.0f;
 
-        if (path_1_list.Contains(cellID) && !path_1_list.Contains(lastID))
+        if (path_1_list.Contains(cellID) && !path_1_list.Contains(lastID) && cellID != 19)
         {
             print("Correct");
             goodSound.Post(gameObject);
         }
 
-        else if (path_1_list.Contains(lastID) && !path_1_list.Contains(cellID))
+        else if (path_1_list.Contains(lastID) && !path_1_list.Contains(cellID) && cellID != 19)
         {
             print("Incorrect");
             badSound.Post(gameObject);
