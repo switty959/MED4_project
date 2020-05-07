@@ -33,6 +33,7 @@ public class Help : MonoBehaviour
 
     public void End()
     {
+        exitHelpButtons.SetActive(false);
         EndScreen.SetActive(true);
         FreezePlayer();
     }
