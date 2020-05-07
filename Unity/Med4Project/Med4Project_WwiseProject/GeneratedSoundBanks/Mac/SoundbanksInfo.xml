@@ -17,7 +17,9 @@
 			<Path>General.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3201694278" Name="backgroundSound" ObjectPath="\Events\Default Work Unit\backgroundSound" DurationType="Infinite"/>
+				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.454495" DurationMax="0.454495"/>
 				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
+				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.304844" DurationMax="0.304844"/>
 				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -36,6 +38,10 @@
 				<File Id="313240041" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_29448B29.wem</Path>
+				</File>
+				<File Id="405475584" Language="SFX">
+					<ShortName>goodbad.wav</ShortName>
+					<Path>SFX\goodbad_704BDFA5.wem</Path>
 				</File>
 				<File Id="594578564" Language="SFX">
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
@@ -61,6 +67,10 @@
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
 					<Path>SFX\ES_Walk Wood Floor - SFX Producer_DAB0F597.wem</Path>
 				</File>
+				<File Id="919117762" Language="SFX">
+					<ShortName>goodbad.wav</ShortName>
+					<Path>SFX\goodbad_55C390CB.wem</Path>
+				</File>
 				<File Id="944684018" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_0EAAF3F4.wem</Path>
@@ -78,6 +88,12 @@
 				<GameParameter Id="1240670792" Name="distance" ObjectPath="\Game Parameters\Default Work Unit\distance"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="379656168" Name="goodBadSound" ObjectPath="\Switches\Default Work Unit\goodBadSound">
+					<Switches>
+						<Switch Id="668632890" Name="good" ObjectPath="\Switches\Default Work Unit\goodBadSound\good"/>
+						<Switch Id="513390134" Name="bad" ObjectPath="\Switches\Default Work Unit\goodBadSound\bad"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="748991833" Name="locomotion_type" ObjectPath="\Switches\Default Work Unit\locomotion_type">
 					<Switches>
 						<Switch Id="841620460" Name="concrete" ObjectPath="\Switches\Default Work Unit\locomotion_type\concrete"/>

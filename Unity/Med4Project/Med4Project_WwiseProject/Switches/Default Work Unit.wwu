@@ -9,6 +9,12 @@
 						<Switch Name="wood" ID="{5A713359-7D2F-4555-B7F6-346148800415}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="goodBadSound" ID="{04840B18-5EA8-400E-8526-5EA16D2BC5E7}">
+					<ChildrenList>
+						<Switch Name="good" ID="{14202C15-ECBD-4DA8-A0C7-411A3D54E489}"/>
+						<Switch Name="bad" ID="{08BA9170-CDB7-4F8D-B7D2-A62FCD629407}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

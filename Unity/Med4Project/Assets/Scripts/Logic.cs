@@ -14,8 +14,8 @@ public class Logic : MonoBehaviour
     [TextArea(15, 20)]
     public string path_1_ids;
     public int lastID;
-    public AudioSource goodSound;
-    public AudioSource badSound;
+    public AK.Wwise.Event goodSound,badSound;
+
     public GameObject player;
     public Vector3 lastCorrect = Vector3.zero;
 
@@ -47,30 +47,33 @@ public class Logic : MonoBehaviour
             if (path_1_list[index] == cellID)
             {
                 //print("correct");
-                goodSound.volume = 1.0f;
-                badSound.volume = 0.0f;
+                //goodSound.volume = 1.0f;
+                //badSound.volume = 0.0f;
+                goodSound.Post(gameObject);
                 lastCorrect = cellObject.transform.position;
             }
             else
             {
                 //print("incorrect");          
                 offset = Vector3.Distance(player.transform.position, lastCorrect);
-                goodSound.volume = 1 - (offset/10);
-                badSound.volume = offset / 10;
+                badSound.Post(gameObject);
+                //goodSound.volume = 1 - (offset/10);
+                //badSound.volume = offset / 10;
             }
         }
         else
         {
             //print("incorrect");
+            badSound.Post(gameObject);
             offset = (lastCorrect - player.transform.position).magnitude;
-            goodSound.volume = 1 - (offset / 10);
-            badSound.volume = offset / 10;
+            //goodSound.volume = 1 - (offset / 10);
+            //badSound.volume = offset / 10;
         }
 
     }
 
     private void Update()
     {
-        print("Good sound volume = " + goodSound.volume + ", Bad sound volume = " + badSound.volume);
+        //print("Good sound volume = " + goodSound.volume + ", Bad sound volume = " + badSound.volume);
     }
 }

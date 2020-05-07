@@ -14,12 +14,25 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BACKGROUNDSOUND = 3201694278U;
+        static const AkUniqueID BADSOUND = 2345884723U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID GOODSOUND = 3430553343U;
         static const AkUniqueID ORBSOUND = 2749187265U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
+        namespace GOODBADSOUND
+        {
+            static const AkUniqueID GROUP = 379656168U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BAD = 513390134U;
+                static const AkUniqueID GOOD = 668632890U;
+            } // namespace SWITCH
+        } // namespace GOODBADSOUND
+
         namespace LOCOMOTION_TYPE
         {
             static const AkUniqueID GROUP = 748991833U;

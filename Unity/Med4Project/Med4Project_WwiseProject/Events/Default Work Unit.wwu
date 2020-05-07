@@ -47,6 +47,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="goodSound" ID="{910C9DFB-EFD9-43AE-BFF6-EC0BDA802713}">
+					<ChildrenList>
+						<Action Name="" ID="{9F6CC331-0A16-42D3-A244-CB388D207642}" ShortID="320086818">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="goodSound" ID="{D45DCD37-24AE-4EC6-8426-D522B0E4EF18}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="badSound" ID="{1AAAFEAB-BAAA-4BD2-B19C-FD48496F41BE}">
+					<ChildrenList>
+						<Action Name="" ID="{3C5CF66F-A59F-4E08-A525-637FC3C2FDC1}" ShortID="553268578">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="badSound" ID="{0DC7C954-0C36-4DC0-A1DD-92B44176F554}" WorkUnitID="{CD9E4944-0EA2-455D-8CD1-C780E3304F67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
