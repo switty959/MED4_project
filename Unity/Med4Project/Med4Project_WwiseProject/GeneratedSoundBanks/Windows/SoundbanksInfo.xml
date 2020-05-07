@@ -16,9 +16,9 @@
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.375011" DurationMax="2.375011"/>
 				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
-				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.600000" DurationMax="1.600000"/>
+				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.375011" DurationMax="2.375011"/>
 				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="2376404420" Name="panningTest" ObjectPath="\Events\Default Work Unit\panningTest" DurationType="Infinite"/>
 			</IncludedEvents>
@@ -37,7 +37,7 @@
 				</File>
 				<File Id="256120004" Language="SFX">
 					<ShortName>positive.wav</ShortName>
-					<Path>SFX\positive_C09C2CD6.wem</Path>
+					<Path>SFX\positive_C78C424D.wem</Path>
 				</File>
 				<File Id="313240041" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
@@ -51,17 +51,25 @@
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_3C060293.wem</Path>
 				</File>
+				<File Id="625487796" Language="SFX">
+					<ShortName>131660__bertrof__game-sound-correct.wav</ShortName>
+					<Path>SFX\131660__bertrof__game-sound-correct_10C4C929.wem</Path>
+				</File>
 				<File Id="665739801" Language="SFX">
 					<ShortName>ES_Walk Wood Floor - SFX Producer.wav</ShortName>
 					<Path>SFX\ES_Walk Wood Floor - SFX Producer_9303D026.wem</Path>
 				</File>
 				<File Id="686982399" Language="SFX">
 					<ShortName>p4upwards.wav</ShortName>
-					<Path>SFX\p4upwards_5CC77382.wem</Path>
+					<Path>SFX\p4upwards_587F2946.wem</Path>
 				</File>
 				<File Id="706519798" Language="SFX">
 					<ShortName>Concrete_Shoes_Running.wav</ShortName>
 					<Path>SFX\Concrete_Shoes_Running_2491DB90.wem</Path>
+				</File>
+				<File Id="855448956" Language="SFX">
+					<ShortName>131657__bertrof__game-sound-wrong.wav</ShortName>
+					<Path>SFX\131657__bertrof__game-sound-wrong_10C4C929.wem</Path>
 				</File>
 				<File Id="886205884" Language="SFX">
 					<ShortName>4708-leaving-home-by-kevin-macleod.wav</ShortName>

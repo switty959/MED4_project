@@ -803,11 +803,75 @@
 								<ActiveSource Name="positive" ID="{061F82EF-8E6A-482A-A40F-3AD05DCE25CA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="131657__bertrof__game-sound-wrong" ID="{7F1F06B8-BC7D-4327-B8D9-F6B33695397B}" ShortID="201263481">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="131657__bertrof__game-sound-wrong" ID="{C2C6F344-3F61-4B6F-AC42-A39A1F69768D}">
+									<Language>SFX</Language>
+									<AudioFile>131657__bertrof__game-sound-wrong.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="855448956"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="131657__bertrof__game-sound-wrong" ID="{C2C6F344-3F61-4B6F-AC42-A39A1F69768D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="131660__bertrof__game-sound-correct" ID="{B43EDCE9-96BF-4F16-87BD-17B626365638}" ShortID="391787597">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB1C1D03-6650-42B4-87FC-23DA15AC3EBC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{558BFE61-5F9B-4DA0-8036-2B5120BCD84C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="131660__bertrof__game-sound-correct" ID="{8CD6927E-BD44-41C5-8022-02259917FEC2}">
+									<Language>SFX</Language>
+									<AudioFile>131660__bertrof__game-sound-correct.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="625487796"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="131660__bertrof__game-sound-correct" ID="{8CD6927E-BD44-41C5-8022-02259917FEC2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
+								<ItemRef Name="131657__bertrof__game-sound-wrong" ID="{7F1F06B8-BC7D-4327-B8D9-F6B33695397B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="badSound" ID="{ACBBA7CA-FF54-4E91-B232-D93DE2F66239}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="131660__bertrof__game-sound-correct" ID="{B43EDCE9-96BF-4F16-87BD-17B626365638}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="goodSound" ID="{4C53B1F3-967D-4698-903E-76C77F337B22}"/>

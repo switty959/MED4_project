@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e39b7c4addbb454e90b6b6af8354f4af
     GuidInternal: 
-    m_lastTime: -8586127508348436839
+    m_lastTime: -8586127140291924767
     List:
     - name: General
       guid: 1e6f9ae276400d4bbc128a5c800f15fc
@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f1fe3549169b8b4d82e5493091337480
     GuidInternal: 
-    m_lastTime: -8586127507875617487
+    m_lastTime: -8586127140291724845
     List:
     - name: badSound
       guid: abfeaa1aaabad24bb19cfd48496f41be
@@ -68,8 +68,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\badSound
       maxAttenuation: 100
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 2.375011
+      minDuration: 2.375011
     - name: FootStep
       guid: 021891cd5125074aaddf8482a0dc036d
       id: 1866025847
@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\goodSound
       maxAttenuation: 100
-      maxDuration: 1.6
-      minDuration: 1.6
+      maxDuration: 2.375011
+      minDuration: 2.375011
     - name: OrbSound
       guid: a15ab0f4dc90ee4dbc816e1e45035a7c
       id: 2749187265

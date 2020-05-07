@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{22C7E798-4F16-47D0-BC4B-4791E341DEA3}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Switty's pc\Desktop\footsteps\footstepsOnCement\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Switty's pc\Downloads\"/>
 				<Property Name="Event Action List\{1AAAFEAB-BAAA-4BD2-B19C-FD48496F41BE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{669F1FAB-A37B-4D63-AC26-80B4A6BAF0B0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8196F5A9-36C5-4DAE-9D36-639314E2C08D}\x64_Expand States" Type="string" Value=""/>
@@ -32,7 +32,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="BesjuxW5zEmfynkMT8RuXg=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="haaSdWESp0yMKOG8X8OIyQGA+xH/////rR9TFH13mkeL5k4XgR9biwGA+xH/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="rR9TFH13mkeL5k4XgR9biwGA1m7/////haaSdWESp0yMKOG8X8OIyQGA1m7/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

@@ -23,10 +23,7 @@ public class buttonController : MonoBehaviour
         AkSoundEngine.SetRTPCValue("PanSilder",sliderValue);
 
 
-        if(buttonPanels[1].activeInHierarchy == true)
-        {
-            audioSource.volume = Mathf.Lerp(audioSource.volume, 0f, Time.deltaTime);
-        }
+        
     }
     public void StartGame(int level)
     {
