@@ -131,15 +131,15 @@ public class SimpleCharacterControlFree : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
-        bool walk = Input.GetKey(KeyCode.LeftShift);
+        //bool walk = Input.GetKey(KeyCode.LeftShift);
 
-        if (v < 0) {
-            if (walk) { v *= m_backwardsWalkScale; }
-            else { v *= m_backwardRunScale; }
-        } else if(walk)
-        {
-            v *= m_walkScale;
-        }
+        //if (v < 0) {
+        //    if (walk) { v *= m_backwardsWalkScale; }
+        //    else { v *= m_backwardRunScale; }
+        //} else if(walk)
+        //{
+        //    v *= m_walkScale;
+        //}
 
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
         m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
