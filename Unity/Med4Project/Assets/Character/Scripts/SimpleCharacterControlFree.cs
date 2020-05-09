@@ -53,6 +53,11 @@ public class SimpleCharacterControlFree : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (m_currentV > 0.2f || m_currentH > 0.2f)
+        {
+            Collapse();
+            Invoke("GetUp", 2.0f);
+        }
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
@@ -149,6 +154,7 @@ public class SimpleCharacterControlFree : MonoBehaviour
 
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
+
     }
 
 
@@ -156,6 +162,16 @@ public class SimpleCharacterControlFree : MonoBehaviour
     {
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
+
+        if (transform.up.y != 1)
+        {
+            m_animator.enabled = false;
+        }
+
+        else
+        {
+            m_animator.enabled = true;
+        }
 
 
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
@@ -169,15 +185,35 @@ public class SimpleCharacterControlFree : MonoBehaviour
 
         if (direction != Vector3.zero)
         {
+            m_animator.enabled = true;
             m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
 
             transform.rotation = Quaternion.LookRotation(m_currentDirection);
             transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
-
+            
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
 
+        else
+        {
+            //Invoke("Collapse", 5.0f);
+        }
+
     }
+
+
+    public void Collapse()
+    {
+        m_animator.enabled = false;
+    }
+
+    public void GetUp()
+    {
+        m_animator.enabled = true;
+
+    }
+
+
 
 
 }
