@@ -27,6 +27,7 @@ public class buttonController : MonoBehaviour
     }
     public void StartGame(int level)
     {
+        AkSoundEngine.StopAll();
         Debug.Log("i was pressed");
         SceneManager.LoadScene(level);
         
