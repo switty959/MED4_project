@@ -284,16 +284,11 @@
     <Compile Include="Assets\generateUserName.cs" />
     <None Include="Assets\Character\Shaders\FreeCelShader.shader" />
     <None Include="Assets\Character\Materials\BasicHologram.shader" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
     <None Include="Assets\Materials\Blur.shader" />
     <None Include="Assets\StreamingAssets\desc.txt" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
     <None Include="Assets\Wwise\Version.txt" />
     <None Include="Assets\Character\Materials\BaiscRim.shader" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\general.txt" />
     <None Include="Assets\WwiseSettings.xml" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\OrbSound.txt" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
