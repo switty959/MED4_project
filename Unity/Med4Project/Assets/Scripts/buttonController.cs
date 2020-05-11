@@ -8,15 +8,10 @@ public class buttonController : MonoBehaviour
 
     public GameObject[] buttonPanels;
     public Slider slider;
-    private AudioSource audioSource;
     private float sliderValue;
 
 
-    public void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    
-    }
+
     public void Update()
     {
         sliderValue = slider.value; 
