@@ -10,11 +10,11 @@ public class Help : MonoBehaviour
     public GameObject player;
     public GameObject EndScreen;
     public GameObject exitHelpButtons;
+    public GameObject rageEndScreen;
+    public movementScript playerData;
     void Start()
     {
-
-        Invoke("ShowInstructions", 2);
-
+        ShowInstructions();
     }
 
     public void ShowInstructions()
@@ -55,6 +55,26 @@ public class Help : MonoBehaviour
     public void EndGame()
     {
         Application.Quit();
+    }
+
+    public void RageEndGame()
+    {
+        playerData.ended = true;
+        EndGame();
+    }
+
+    public void rageQuit()
+    {
+        FreezePlayer();
+        rageEndScreen.SetActive(true);
+        exitHelpButtons.SetActive(false);
+    }
+
+    public void CancelRageQuit()
+    {
+        UnfreezePlayer();
+        rageEndScreen.SetActive(false);
+        exitHelpButtons.SetActive(true);
     }
 
 }

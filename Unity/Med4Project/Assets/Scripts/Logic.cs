@@ -15,6 +15,8 @@ public class Logic : MonoBehaviour
     public string path_1_ids;
     public int lastID;
     public AK.Wwise.Event goodSound,badSound;
+    private bool goodPlayed, badPlayed = true;
+
 
     public GameObject player;
     public Vector3 lastCorrect = Vector3.zero;
@@ -39,20 +41,59 @@ public class Logic : MonoBehaviour
 
     public void PathCheck(int cellID, GameObject cellObject)
     {
-        //var index = path_1_list.IndexOf(lastID) + 1;
+        var index = path_1_list.IndexOf(lastID);
         //float offset = 0.0f;
 
-        if (path_1_list.Contains(cellID) && !path_1_list.Contains(lastID) && cellID != 19)
+        print("CellID is " + cellID + " last ID + 1 is " + path_1_list[index + 1]);
+
+        if (path_1_list.Contains(cellID) && path_1_list.Contains(lastID) && cellID != 19 && cellID != 0)
         {
-            print("Correct");
-            goodSound.Post(gameObject);
+            if (path_1_list[index + 1] == cellID)
+            {
+                
+                if (!goodPlayed)
+                {
+                    goodSound.Post(gameObject);
+                }
+                goodPlayed = true;
+                badPlayed = false;
+            }
+
+            else
+            {
+
+                if (!badPlayed)
+                {
+                    badSound.Post(gameObject);
+                }
+                goodPlayed = false;
+                badPlayed = true;
+            }
         }
 
-        else if (path_1_list.Contains(lastID) && !path_1_list.Contains(cellID) && cellID != 19)
+        else
         {
-            print("Incorrect");
-            badSound.Post(gameObject);
+            if (!badPlayed)
+            {
+                badSound.Post(gameObject);
+            }
+            goodPlayed = false;
+            badPlayed = true;
         }
+
+        //else if (path_1_list.Contains(lastID) && !path_1_list.Contains(cellID) && cellID != 19)
+        //{
+        //    print("Incorrect");
+        //    badSound.Post(gameObject);
+        //}
+
+        //else
+        //{
+        //    if (path_1_list[index] != cellID)
+        //    {
+        //        badSound.Post(gameObject);
+        //    }
+        //}
 
         //if (path_1_list.Contains(cellID))
         //{

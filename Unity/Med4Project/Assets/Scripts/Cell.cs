@@ -7,7 +7,7 @@ public class Cell : MonoBehaviour
     
     public int id;
     public Logic logic;
-    public int instanceID;
+    
     
     private void OnTriggerEnter(Collider other)
     {

@@ -53,11 +53,7 @@ public class SimpleCharacterControlFree : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (m_currentV > 0.2f || m_currentH > 0.2f)
-        {
-            Collapse();
-            Invoke("GetUp", 2.0f);
-        }
+
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
@@ -194,24 +190,11 @@ public class SimpleCharacterControlFree : MonoBehaviour
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
 
-        else
-        {
-            //Invoke("Collapse", 5.0f);
-        }
 
     }
 
 
-    public void Collapse()
-    {
-        m_animator.enabled = false;
-    }
 
-    public void GetUp()
-    {
-        m_animator.enabled = true;
-
-    }
 
 
 
