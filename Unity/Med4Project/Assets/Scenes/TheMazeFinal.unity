@@ -6500,6 +6500,22 @@ PrefabInstance:
       propertyPath: usernameHolder
       value: 
       objectReference: {fileID: 323506813}
+    - target: {fileID: 1633247443, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+      propertyPath: m_listeners.initialListenerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633247443, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633247443, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633247443, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 775675277469659285, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
         type: 3}
       propertyPath: m_Name

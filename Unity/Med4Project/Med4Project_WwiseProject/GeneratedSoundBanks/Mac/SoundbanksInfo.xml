@@ -19,7 +19,7 @@
 				<Event Id="2345884723" Name="badSound" ObjectPath="\Events\Default Work Unit\badSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.375011" DurationMax="2.375011"/>
 				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" DurationType="OneShot" DurationMin="0.154685" DurationMax="0.873058"/>
 				<Event Id="3430553343" Name="goodSound" ObjectPath="\Events\Default Work Unit\goodSound" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.375011" DurationMax="2.375011"/>
-				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="2749187265" Name="OrbSound" ObjectPath="\Events\Default Work Unit\OrbSound" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="2376404420" Name="panningTest" ObjectPath="\Events\Default Work Unit\panningTest" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

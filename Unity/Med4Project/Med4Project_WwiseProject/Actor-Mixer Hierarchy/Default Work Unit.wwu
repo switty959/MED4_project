@@ -5,12 +5,9 @@
 			<ChildrenList>
 				<Sound Name="OrbSound" ID="{19A23DE6-287D-49C6-9AA0-98994EFA5803}" ShortID="452935624">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{1124CAB7-1901-405A-AA75-A2E50CC0B169}" ShortID="385536655">
 									<ReferenceList>
@@ -25,18 +22,18 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-200</YPos>
+												<YPos>0.12805</YPos>
 												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>40</XPos>
-												<YPos>-10</YPos>
+												<XPos>40.877</XPos>
+												<YPos>-5</YPos>
 												<Flags>0</Flags>
-												<SegmentShape>Exp1</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>0</YPos>
+												<YPos>-20</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -68,18 +65,18 @@
 													<PointList>
 														<Point>
 															<XPos>0</XPos>
-															<YPos>0</YPos>
+															<YPos>-0</YPos>
 															<Flags>5</Flags>
 															<SegmentShape>Log1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>40.0314</XPos>
-															<YPos>-8.56061</YPos>
+															<XPos>40.15699</XPos>
+															<YPos>-6.08939</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
 															<XPos>100</XPos>
-															<YPos>-200</YPos>
+															<YPos>-12.72221</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -142,6 +139,9 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{CF37B04A-EB77-4D67-80AE-C078FEA8694A}"/>
+					</PositioningInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Realization 1" ID="{E7458872-5436-4DF0-8934-8B607A7318D8}" Platform="Linked"/>
 					</ActiveSourceList>
