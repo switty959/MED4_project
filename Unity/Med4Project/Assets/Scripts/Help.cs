@@ -12,13 +12,22 @@ public class Help : MonoBehaviour
     public GameObject exitHelpButtons;
     public GameObject rageEndScreen;
     public movementScript playerData;
+    public databaseSendData database;
+    public Text[] UICode;
     void Start()
     {
+        string username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
+        for (int i = 0; i < UICode.Length; i++)
+        {
+            UICode[i].text = "Code: " + username.ToString();
+        }
+        
         ShowInstructions();
     }
 
     public void ShowInstructions()
     {
+
         tutorial.SetActive(true);
         exitHelpButtons.SetActive(false);
         FreezePlayer();
@@ -60,6 +69,11 @@ public class Help : MonoBehaviour
     public void RageEndGame()
     {
         playerData.ended = true;
+        StartCoroutine(database.Upload(playerData.username.ToString(),
+                        playerData.timeCounter.ToString(),
+                        playerData.distanceCounter.ToString(),
+                        playerData.ended.ToString()));
+  
         EndGame();
     }
 

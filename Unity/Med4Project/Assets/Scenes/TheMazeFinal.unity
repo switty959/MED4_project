@@ -6577,6 +6577,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+--- !u!114 &935227654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1633247441, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
+    type: 3}
+  m_PrefabInstance: {fileID: 935227653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67efd5a0d570c7d43a8187bf8a96b9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &940342580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9543,6 +9555,10 @@ MonoBehaviour:
   exitHelpButtons: {fileID: 1855134907}
   rageEndScreen: {fileID: 1391144385}
   playerData: {fileID: 2093986010}
+  database: {fileID: 935227654}
+  UICode:
+  - {fileID: 323506813}
+  - {fileID: 1373301661}
 --- !u!4 &1455908769
 Transform:
   m_ObjectHideFlags: 0
@@ -12167,6 +12183,11 @@ PrefabInstance:
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748688856612009363, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+        type: 3}
+      propertyPath: m_moveSpeed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}

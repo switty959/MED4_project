@@ -6,7 +6,6 @@
 				<GameParameter Name="distance" ID="{057011E5-E564-45A9-BC01-D4CA335C8C40}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PanSilder" ID="{E6CA83BA-7480-44BE-BAF0-883499D441F9}">

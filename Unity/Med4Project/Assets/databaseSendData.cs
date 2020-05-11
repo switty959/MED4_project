@@ -23,7 +23,8 @@ public class databaseSendData : MonoBehaviour
             usernameHolder.text ="Code: "+ username;
             timeSpent =  other.GetComponent<movementScript>().timeCounter.ToString();
             distanceTraveled = other.GetComponent<movementScript>().distanceCounter.ToString();
-            StartCoroutine(Upload(username, timeSpent, distanceTraveled));
+            rageQuit = other.GetComponent<movementScript>().ended.ToString();
+            StartCoroutine(Upload(username, timeSpent, distanceTraveled,rageQuit));
             Debug.Log("timer :" + timeSpent);
             Debug.Log("distance :" + distanceTraveled);
             Debug.Log("username : "+username);
@@ -32,7 +33,7 @@ public class databaseSendData : MonoBehaviour
     }
 
    
-    IEnumerator Upload(string playerName, string timer,string distanceCounter)
+    public IEnumerator Upload(string playerName, string timer,string distanceCounter,string rageQuit)
     {
         WWWForm form = new WWWForm();
         form.AddField("playerName", playerName);

@@ -13,7 +13,7 @@ public class movementScript : MonoBehaviour
     public float distanceCounter;
     public float timeCounter;
     public bool ended;
-    
+    public string username;
     private SimpleCharacterControlFree controller;
     public GameObject manager;
 
@@ -23,7 +23,9 @@ public class movementScript : MonoBehaviour
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
-        
+        username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
+
+
         controller = gameObject.GetComponent<SimpleCharacterControlFree>();
     }
 
