@@ -10,6 +10,7 @@ public class databaseSendData : MonoBehaviour
     string timeSpent;
     string distanceTraveled;
     string username;
+    string rageQuit;
     bool sendData = false;
     public Text usernameHolder;
     
@@ -37,6 +38,7 @@ public class databaseSendData : MonoBehaviour
         form.AddField("playerName", playerName);
         form.AddField("timer", timer);
         form.AddField("distance", distanceCounter);
+        form.AddField("rageQuit", rageQuit);
 
 
         UnityWebRequest www = UnityWebRequest.Post("http://switty.dk/SendData.php", form);

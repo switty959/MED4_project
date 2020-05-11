@@ -51,3 +51,6 @@ Unity/Med4Project/Assembly-CSharp.csproj
 Unity/Med4Project/Assembly-CSharp.csproj
 *.csproj
 *.csproj
+Unity/Med4Project/Assembly-CSharp-Editor.csproj
+Unity/Med4Project/Assembly-CSharp.csproj
+Unity/Med4Project/ProjectSettings/ProjectVersion.txt
