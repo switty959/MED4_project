@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Sound Name="OrbSound" ID="{19A23DE6-287D-49C6-9AA0-98994EFA5803}" ShortID="452935624">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -24,13 +25,18 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>0</YPos>
+												<YPos>-200</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>40</XPos>
+												<YPos>-10</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp1</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>-20.21448</YPos>
+												<YPos>0</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
