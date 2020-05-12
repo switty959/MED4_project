@@ -3136,6 +3136,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee6ae227d4e93249b7658fd4493e16c, type: 3}
+--- !u!114 &402632032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1633247442, guid: 7f7eca1f7477a834e8f2b1b281fdc241,
+    type: 3}
+  m_PrefabInstance: {fileID: 935227653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad9ed0ee88cf774d9728b7a4ab01e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &402881804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: de65a6d12945db74c9ba8c96c5a0afb0,
@@ -6505,6 +6517,10 @@ PrefabInstance:
       propertyPath: usernameHolder
       value: 
       objectReference: {fileID: 323506813}
+    - target: {fileID: 1633247441, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
+      propertyPath: help
+      value: 
+      objectReference: {fileID: 1455908768}
     - target: {fileID: 1633247443, guid: 7f7eca1f7477a834e8f2b1b281fdc241, type: 3}
       propertyPath: m_listeners.initialListenerList.Array.size
       value: 0
@@ -9580,6 +9596,9 @@ MonoBehaviour:
   UICode:
   - {fileID: 323506813}
   - {fileID: 1373301661}
+  audioCues: {fileID: 969403642}
+  orb: {fileID: 402632032}
+  condition: 
 --- !u!4 &1455908769
 Transform:
   m_ObjectHideFlags: 0

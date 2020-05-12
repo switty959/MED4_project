@@ -13,6 +13,7 @@ public class databaseSendData : MonoBehaviour
     string rageQuit;
     bool sendData = false;
     public Text usernameHolder;
+    public Help help;
     
 
     private void OnTriggerEnter(Collider other)
@@ -24,7 +25,7 @@ public class databaseSendData : MonoBehaviour
             timeSpent =  other.GetComponent<movementScript>().timeCounter.ToString();
             distanceTraveled = other.GetComponent<movementScript>().distanceCounter.ToString();
             rageQuit = other.GetComponent<movementScript>().ended.ToString();
-            StartCoroutine(Upload(username, timeSpent, distanceTraveled,rageQuit));
+            StartCoroutine(Upload(username + help.condition, timeSpent, distanceTraveled,rageQuit));
             Debug.Log("timer :" + timeSpent);
             Debug.Log("distance :" + distanceTraveled);
             Debug.Log("username : "+username);

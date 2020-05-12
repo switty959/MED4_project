@@ -15,6 +15,9 @@ public class Help : MonoBehaviour
     public databaseSendData database;
     public Text[] UICode;
     int usernameInt;
+    public Logic audioCues;
+    public AkEvent orb;
+    public string condition;
     void Start()
     {
         string username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
@@ -26,6 +29,20 @@ public class Help : MonoBehaviour
         ShowInstructions();
 
         usernameInt = int.Parse(username);
+
+        if (usernameInt % 2 == 1)
+        {
+            audioCues.enabled = false;
+            orb.enabled = false;
+            condition = "b";
+        }
+
+        else
+        {
+            condition = "a";
+        }
+
+        //condition = "Scott";
     }
 
     public void ShowInstructions()
@@ -67,13 +84,13 @@ public class Help : MonoBehaviour
     public void EndGame()
     {
         print(usernameInt);
-        if (usernameInt % 2 == 0)
+        if (usernameInt % 2 == 0) // A Test (Audio)
         {
             Application.OpenURL("https://chickenonaraft.com/");
             print("Option 1");
         }
 
-        else
+        else // B Test (No Audio)
         {
             Application.OpenURL("http://www.patience-is-a-virtue.org/");
             print("Option 2");
@@ -87,7 +104,7 @@ public class Help : MonoBehaviour
     public void RageEndGame()
     {
         playerData.ended = true;
-        StartCoroutine(database.Upload(playerData.username.ToString(),
+        StartCoroutine(database.Upload(playerData.username.ToString() + condition,
                         playerData.timeCounter.ToString(),
                         playerData.distanceCounter.ToString(),
                         playerData.ended.ToString()));
