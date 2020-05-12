@@ -14,6 +14,7 @@ public class Help : MonoBehaviour
     public movementScript playerData;
     public databaseSendData database;
     public Text[] UICode;
+    int usernameInt;
     void Start()
     {
         string username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
@@ -23,6 +24,8 @@ public class Help : MonoBehaviour
         }
         
         ShowInstructions();
+
+        usernameInt = int.Parse(username);
     }
 
     public void ShowInstructions()
@@ -63,7 +66,21 @@ public class Help : MonoBehaviour
 
     public void EndGame()
     {
-        Application.Quit();
+        print(usernameInt);
+        if (usernameInt % 2 == 0)
+        {
+            Application.OpenURL("https://chickenonaraft.com/");
+            print("Option 1");
+        }
+
+        else
+        {
+            Application.OpenURL("http://www.patience-is-a-virtue.org/");
+            print("Option 2");
+        }
+
+        print("quit");
+        //Application.Quit();
     }
 
     public void RageEndGame()
@@ -73,7 +90,7 @@ public class Help : MonoBehaviour
                         playerData.timeCounter.ToString(),
                         playerData.distanceCounter.ToString(),
                         playerData.ended.ToString()));
-  
+
         EndGame();
     }
 

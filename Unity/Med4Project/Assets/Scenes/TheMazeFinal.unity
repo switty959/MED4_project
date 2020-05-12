@@ -4687,7 +4687,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8ec344c57a3219844a0639b03acd0baa, type: 3}
-    m_FontSize: 14
+    m_FontSize: 11
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -4703,11 +4703,17 @@ MonoBehaviour:
 
     Thank you for testing The Maze.
 
-    Write code
-    below on questionnaire
+
+    Clicking
+    exit below will guide you to your questionnaire
+
+    please input your unique
+    code there
 
 
-    Have a great day'
+    but, most importantly,
+
+    have a great day!'
 --- !u!222 &598286850
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11242,7 +11248,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8ec344c57a3219844a0639b03acd0baa, type: 3}
-    m_FontSize: 14
+    m_FontSize: 11
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -11257,11 +11263,17 @@ MonoBehaviour:
 
     Thank you for testing The Maze.
 
-    Write code below on questionnaire
+
+    Clicking exit below will guide
+    you to your questionnaire
+
+    please input your unique code there
 
 
-    Have
-    a great day'
+    but,
+    most importantly,
+
+    have a great day!'
 --- !u!222 &1898476101
 CanvasRenderer:
   m_ObjectHideFlags: 0
