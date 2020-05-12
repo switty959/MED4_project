@@ -4663,7 +4663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -96}
+  m_AnchoredPosition: {x: 0, y: -81.8}
   m_SizeDelta: {x: 473.83, y: 141.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598286849
@@ -4705,15 +4705,14 @@ MonoBehaviour:
 
 
     Clicking
-    exit below will guide you to your questionnaire
-
-    please input your unique
-    code there
+    exit below will guide you to your questionnaire, please input your unique code
+    there. It only takes 2 minutes!
 
 
-    but, most importantly,
+    But, most importantly,
 
-    have a great day!'
+    have a great
+    day!'
 --- !u!222 &598286850
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9217,7 +9216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1391144386
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11259,19 +11258,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '
-
-    Thank you for testing The Maze.
+  m_Text: 'Thank you for testing The Maze.
 
 
-    Clicking exit below will guide
-    you to your questionnaire
+    Clicking exit below will guide you
+    to your questionnaire
 
     please input your unique code there
 
 
-    but,
-    most importantly,
+    It only
+    takes 2 minutes!
+
+
+    But, most importantly,
 
     have a great day!'
 --- !u!222 &1898476101
