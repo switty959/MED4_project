@@ -81,6 +81,7 @@ public class Help : MonoBehaviour
 
         print("quit");
         //Application.Quit();
+        Screen.fullScreen = false;
     }
 
     public void RageEndGame()
