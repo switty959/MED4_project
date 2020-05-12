@@ -18,6 +18,7 @@ public class Help : MonoBehaviour
     public Logic audioCues;
     public AkEvent orb;
     public string condition;
+    private bool sentData;
     void Start()
     {
         string username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
@@ -104,10 +105,15 @@ public class Help : MonoBehaviour
     public void RageEndGame()
     {
         playerData.ended = true;
-        StartCoroutine(database.Upload(playerData.username.ToString() + condition,
-                        playerData.timeCounter.ToString(),
-                        playerData.distanceCounter.ToString(),
-                        playerData.ended.ToString()));
+        if (sentData == false)
+        {
+            StartCoroutine(database.Upload(playerData.username.ToString() + condition,
+                                    playerData.timeCounter.ToString(),
+                                    playerData.distanceCounter.ToString(),
+                                    playerData.ended.ToString()));
+            sentData = true;
+        }
+        
 
         EndGame();
     }
@@ -121,6 +127,7 @@ public class Help : MonoBehaviour
 
     public void CancelRageQuit()
     {
+        playerData.ended = false;
         UnfreezePlayer();
         rageEndScreen.SetActive(false);
         exitHelpButtons.SetActive(true);
