@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2749187265	OrbSound			\Default Work Unit\OrbSound	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1240670792	distance			\Default Work Unit\distance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	118368654	OrbSound	F:\unity_projekt\MED4_project\Unity\Med4Project\Med4Project_WwiseProject\.cache\Windows\SFX\Realization 1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\OrbSound		2929752
+

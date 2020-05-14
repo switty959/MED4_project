@@ -19,6 +19,8 @@ public class Help : MonoBehaviour
     public AkEvent orb;
     public string condition;
     private bool sentData;
+    public GameObject codePanel;
+    public Text codePanelText;
     void Start()
     {
         string username = GameObject.Find("userNameHolder").GetComponent<generateUserName>().username;
@@ -98,8 +100,12 @@ public class Help : MonoBehaviour
         }
 
         print("quit");
-        //Application.Quit();
-        Screen.fullScreen = false;
+
+        Screen.SetResolution(1280, 720, false);
+        codePanelText.text = playerData.username;
+        rageEndScreen.SetActive(false);
+        codePanel.SetActive(true);
+
     }
 
     public void RageEndGame()
