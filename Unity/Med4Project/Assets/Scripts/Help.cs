@@ -87,13 +87,13 @@ public class Help : MonoBehaviour
         print(usernameInt);
         if (usernameInt % 2 == 0) // A Test (Audio)
         {
-            Application.OpenURL("https://chickenonaraft.com/");
+            Application.OpenURL("https://forms.gle/YKvXj2NwqAsw24xT7");
             print("Option 1");
         }
 
         else // B Test (No Audio)
         {
-            Application.OpenURL("http://www.patience-is-a-virtue.org/");
+            Application.OpenURL("https://forms.gle/XiNXVMwZpbaivMndA");
             print("Option 2");
         }
 
