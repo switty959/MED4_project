@@ -1,0 +1,197 @@
+#N canvas 51 23 1345 767 12;
+#X obj 19 17 tgl 14 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 842 672 dac~ 1 2;
+#X text 40 17 to turn on/ off the DSP;
+#X text 787 671 output;
+#X msg 19 46 \; pd dsp \$1;
+#X obj 843 425 +~;
+#X obj 861 385 *~;
+#X obj 887 367 hsl 101 10 -0.999 0.999 0 1 empty empty empty -2 -8
+0 10 -262144 -1 -1 6200 1;
+#X msg 887 342 0;
+#X text 921 288 first-order allpass;
+#X text 922 342 gain;
+#X floatatom 896 385 5 0 0 0 - - -, f 5;
+#X obj 1145 294 hsl 101 10 -0.999 0.999 0 1 empty empty empty -2 -8
+0 10 -262144 -1 -1 6600 1;
+#X floatatom 1160 315 5 0 0 0 - - -, f 5;
+#X text 1171 271 Pole radius;
+#X obj 861 315 fexpr~ -$f2*$x1[0] + $x1[-1] + $f2*$y[-1];
+#X obj 405 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 405 123 openpanel;
+#X msg 405 148 open \$1;
+#X msg 345 124 start;
+#X msg 302 124 stop;
+#X obj 405 183 readsf~;
+#X obj 405 220 *~;
+#X obj 494 149 vsl 15 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3850 1;
+#X text 524 183 To adjust the volume;
+#X text 433 60 To open the sound file;
+#X obj 405 250 *~ 1;
+#X obj 236 354 +~;
+#X obj 236 302 *~ 0;
+#X obj 176 334 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 -1500
+-1500;
+#X obj 176 354 * 0.01;
+#X obj 128 355 *~ 0;
+#X obj 279 277 hsl 40 15 0 0.6 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 2850 1;
+#X floatatom 279 301 5 0 0 0 - - -, f 5;
+#X obj 236 252 delread~ buffer1;
+#X obj 236 381 delwrite~ buffer1;
+#X obj 236 232 nbx 5 14 0 1e+37 0 1 empty empty empty 0 -8 0 10 -262144
+-1 -1 14 256 0;
+#X obj 844 276 *~ 1;
+#X obj 237 582 +~;
+#X obj 237 530 *~ 0;
+#X obj 177 562 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 -1500
+-1500;
+#X obj 177 582 * 0.01;
+#X obj 129 583 *~ 0;
+#X obj 280 505 hsl 40 15 0 0.6 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 2700 1;
+#X floatatom 280 529 5 0 0 0 - - -, f 5;
+#X obj 237 460 nbx 5 14 0 1e+37 0 1 empty empty empty 0 -8 0 10 -262144
+-1 -1 32 256 0;
+#X obj 237 481 delread~ buffer2;
+#X obj 237 609 delwrite~ buffer2;
+#X obj 515 354 +~;
+#X obj 515 302 *~ 0;
+#X obj 455 334 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 -1500
+-1500;
+#X obj 455 354 * 0.01;
+#X obj 407 355 *~ 0;
+#X obj 558 277 hsl 40 15 0 0.6 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 2100 1;
+#X floatatom 558 301 5 0 0 0 - - -, f 5;
+#X obj 515 232 nbx 5 14 0 1e+37 0 1 empty empty empty 0 -8 0 10 -262144
+-1 -1 33 256 0;
+#X obj 515 252 delread~ buffer3;
+#X obj 515 381 delwrite~ buffer3;
+#X obj 516 577 +~;
+#X obj 516 525 *~ 0;
+#X obj 456 557 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 -1500
+-1500;
+#X obj 456 577 * 0.01;
+#X obj 408 578 *~ 0;
+#X obj 559 500 hsl 40 15 0 0.6 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 1600 1;
+#X floatatom 559 524 5 0 0 0 - - -, f 5;
+#X obj 516 455 nbx 5 14 0 1e+37 0 1 empty empty empty 0 -8 0 10 -262144
+-1 -1 7 256 0;
+#X obj 516 475 delread~ buffer4;
+#X obj 516 604 delwrite~ buffer4;
+#X obj 842 608 +~;
+#X obj 860 568 *~;
+#X obj 886 550 hsl 101 10 -0.999 0.999 0 1 empty empty empty -2 -8
+0 10 -262144 -1 -1 5800 1;
+#X msg 886 525 0;
+#X text 920 471 first-order allpass;
+#X text 921 525 gain;
+#X floatatom 895 568 5 0 0 0 - - -, f 5;
+#X obj 1144 477 hsl 101 10 -0.999 0.999 0 1 empty empty empty -2 -8
+0 10 -262144 -1 -1 3850 1;
+#X floatatom 1159 498 5 0 0 0 - - -, f 5;
+#X text 1171 454 Pole radius;
+#X obj 860 498 fexpr~ -$f2*$x1[0] + $x1[-1] + $f2*$y[-1];
+#X obj 843 459 *~ 1;
+#X text 146 203 values to be changed;
+#X msg 1114 259 0;
+#X msg 1095 465 0;
+#X msg 644 251 0;
+#X msg 647 475 0;
+#X msg 365 480 0;
+#X msg 359 250 0;
+#X text 327 530 coeff b;
+#X text 606 523 coeff b;
+#X text 607 300 coeff b;
+#X text 323 300 coeff b;
+#X text 44 202 the bigger the value \, the more noticable the reverb
+, f 10;
+#X text 579 225 delay M;
+#X text 299 223 delay M;
+#X text 300 457 delay M;
+#X text 579 448 delay M;
+#X connect 0 0 4 0;
+#X connect 5 0 79 0;
+#X connect 6 0 5 1;
+#X connect 7 0 6 1;
+#X connect 7 0 11 0;
+#X connect 8 0 7 0;
+#X connect 12 0 13 0;
+#X connect 12 0 15 1;
+#X connect 15 0 6 0;
+#X connect 16 0 17 0;
+#X connect 17 0 18 0;
+#X connect 18 0 21 0;
+#X connect 19 0 21 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 26 0;
+#X connect 23 0 22 1;
+#X connect 26 0 38 1;
+#X connect 26 0 48 1;
+#X connect 26 0 58 1;
+#X connect 26 0 27 1;
+#X connect 27 0 35 0;
+#X connect 28 0 27 0;
+#X connect 29 0 30 0;
+#X connect 30 0 31 1;
+#X connect 31 0 37 0;
+#X connect 32 0 28 1;
+#X connect 32 0 33 0;
+#X connect 34 0 28 0;
+#X connect 34 0 31 0;
+#X connect 36 0 34 0;
+#X connect 37 0 15 0;
+#X connect 37 0 5 0;
+#X connect 38 0 47 0;
+#X connect 39 0 38 0;
+#X connect 40 0 41 0;
+#X connect 41 0 42 1;
+#X connect 42 0 37 0;
+#X connect 43 0 39 1;
+#X connect 43 0 44 0;
+#X connect 45 0 46 0;
+#X connect 46 0 39 0;
+#X connect 46 0 42 0;
+#X connect 48 0 57 0;
+#X connect 49 0 48 0;
+#X connect 49 0 37 0;
+#X connect 50 0 51 0;
+#X connect 51 0 52 1;
+#X connect 53 0 49 1;
+#X connect 53 0 54 0;
+#X connect 55 0 56 0;
+#X connect 56 0 49 0;
+#X connect 56 0 52 0;
+#X connect 58 0 67 0;
+#X connect 59 0 58 0;
+#X connect 59 0 37 0;
+#X connect 60 0 61 0;
+#X connect 61 0 62 1;
+#X connect 63 0 59 1;
+#X connect 63 0 64 0;
+#X connect 65 0 66 0;
+#X connect 66 0 59 0;
+#X connect 66 0 62 0;
+#X connect 68 0 1 0;
+#X connect 68 0 1 1;
+#X connect 69 0 68 1;
+#X connect 70 0 69 1;
+#X connect 70 0 74 0;
+#X connect 71 0 70 0;
+#X connect 75 0 76 0;
+#X connect 75 0 78 1;
+#X connect 78 0 69 0;
+#X connect 79 0 78 0;
+#X connect 79 0 68 0;
+#X connect 81 0 12 0;
+#X connect 82 0 75 0;
+#X connect 83 0 53 0;
+#X connect 84 0 63 0;
+#X connect 85 0 43 0;
+#X connect 86 0 32 0;
