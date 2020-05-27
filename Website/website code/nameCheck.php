@@ -1,8 +1,8 @@
 <?php
-$host     = 'switty.dk.mysql';
-$username = 'switty_dk';
-$password = 'g4kpzxsE';
-$database = 'switty_dk';
+$host     = '';
+$username = '';
+$password = '';
+$database = '';
 
 $connection = new MySQLi($host,$username,$password,$database);
 
