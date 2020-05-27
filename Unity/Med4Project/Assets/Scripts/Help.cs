@@ -32,7 +32,7 @@ public class Help : MonoBehaviour
         ShowInstructions();
 
         usernameInt = int.Parse(username);
-        /*
+        
         if (usernameInt % 2 == 1)
         {
             audioCues.enabled = false;
@@ -44,10 +44,8 @@ public class Help : MonoBehaviour
         {
             condition = "a";
         }
-        */
-        audioCues.enabled = false;
-        orb.enabled = false;
-        condition = "b";
+        
+
     }
 
     public void ShowInstructions()
@@ -88,7 +86,7 @@ public class Help : MonoBehaviour
 
     public void EndGame()
     {
-        print(usernameInt);/*
+        print(usernameInt);
         if (usernameInt % 2 == 0) // A Test (Audio)
         {
             Application.OpenURL("https://forms.gle/YKvXj2NwqAsw24xT7");
@@ -99,10 +97,7 @@ public class Help : MonoBehaviour
         {
             Application.OpenURL("https://forms.gle/XiNXVMwZpbaivMndA");
             print("Option 2");
-        }*/
-
-        Application.OpenURL("https://forms.gle/XiNXVMwZpbaivMndA");
-        print("Option 2");
+        }
 
         print("quit");
 
